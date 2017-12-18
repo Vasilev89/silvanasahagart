@@ -1,6 +1,5 @@
 // Include gulp
 var gulp = require('gulp');
-
 // Include Our Plugins
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
@@ -8,66 +7,34 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var browserSync = require('browser-sync').create();
-var babel = require('gulp-babel');
-var through = require('through2');
 
+var babel = require("gulp-babel");
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
-        server: "./app"
+        server: "./"
     });
 
-    gulp.watch("app/scss/*.scss", ['sass']);
-    gulp.watch("app/*.html").on('change', browserSync.reload);
+    gulp.watch("scss/*.scss", ['sass']);
+    gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.src("app/scss/*.scss")
+    return gulp.src("scss/*.scss")
         .pipe(sass())
-        .pipe(gulp.dest("app/css"))
+        .pipe(gulp.dest("dist/css"))
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['serve']);
-
- 
-function logFileHelpers() {
-    return through.obj((file, enc, cb) => {
-        console.log(file.babel.usedHelpers);
-        cb(null, file);
-    });
-}
- 
-gulp.task('default', () =>
-    gulp.src('src/**/*.js')
-        .pipe(babel({
-            presets: ['env']
-        }))
-        .pipe(logFileHelpers())
-)
-
-// Lint Task
-gulp.task('lint', function() {
-    return gulp.src('js/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'));
-});
-
-// Compile Our Sass
-gulp.task('sass', function() {
-    return gulp.src('scss/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('dist/css'));
-});
-
-// Concatenate & Minify JS
+//Transpile, Concatonate and Minify Javascript
 gulp.task('scripts', function() {
     return gulp.src('js/*.js')
+        .pipe(babel())
+        .pipe(gulp.dest("dist"))
         .pipe(concat('all.js'))
-        .pipe(gulp.dest('dist'))
         .pipe(rename('all.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
@@ -75,9 +42,9 @@ gulp.task('scripts', function() {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('js/*.js', ['lint', 'scripts']);
+    gulp.watch('js/*.js', ['scripts']);
     gulp.watch('scss/*.scss', ['sass']);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'sass', 'scripts', 'watch']);
+gulp.task('default', ['sass', 'scripts', 'watch']);
