@@ -771,6 +771,13 @@
 .display-none {
   display: none !important; }
 
+.ss-button-primary, .ss-form .ss-form-submit {
+  border: 0px;
+  padding: 10px;
+  cursor: pointer;
+  background: #DF5959;
+  color: #fff; }
+
 /*
 .box{
  @include media-object(10px, left, 'table-cell'); 
@@ -800,10 +807,14 @@
 </div>
  */
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', Verdana, Arial, sans-serif; }
+
+.ss-light-copy, .ss-body-copy-default, .ss-hero, .ss-component-arwtworks-paintings-caption {
+  font-weight: 300; }
 
 .ss-body-copy-default, .ss-hero {
-  color: #666666; }
+  color: #666666;
+  line-height: 30px; }
 
 .ss-copy-align-center, h1, h2, h3, .ss-hero {
   text-align: center; }
@@ -813,8 +824,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: 400pxpx;
-  font-size: 40pxrem;
-  margin-bottom: 50px; }
+  font-size: 40pxrem; }
 
 h2 {
   font-size: 300pxpx;
@@ -832,16 +842,16 @@ h2 {
 .ss-component-arwtworks-paintings-caption {
   color: #313541;
   display: block;
-  font-weight: 300;
   font-size: 140pxpx;
   font-size: 14pxrem;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: left; }
 
-ul li {
-  list-style: none; }
-
-.ss-component-arwtworks-paintings li img {
-  max-width: 100%; }
+.ss-body-style {
+  font-size: 140pxpx;
+  font-size: 14pxrem;
+  line-height: 30px;
+  margin: 0px; }
 
 .ss-social-icons {
   text-align: center;
@@ -929,15 +939,7 @@ ul li {
 
 .social_media_icon:hover:before {
   border-color: #d6dfde;
-  background: #d6dfde;
-  /*
-                            VM: Asked for hover rotation to be removed
-                            -webkit-transform: rotate(45deg);
-                            -moz-transform: rotate(45deg);
-                            -ms-transform: rotate(45deg);
-                            -o-transform: rotate(45deg);
-                            transform: rotate(45deg);
-                        */ }
+  background: #d6dfde; }
 
 .social_media_icon:hover:after {
   color: #fff; }
@@ -1729,3 +1731,33 @@ ul li {
 
 .display-none {
   display: none !important; }
+
+.ss-component-arwtworks-paintings li {
+  padding: 0px 20px 0px 20px;
+  text-align: center; }
+  .ss-component-arwtworks-paintings li img {
+    max-width: 100%; }
+
+.ss-form {
+  background: #FAFBFB;
+  padding: 20px; }
+  .ss-form .ss-form-submit {
+    display: block;
+    margin: auto;
+    width: 50%; }
+  .ss-form .ss-form-email {
+    display: block;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    width: 90%; }
+
+.container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1024px; }
+
+ul {
+  padding-left: 0px; }
+
+ul li {
+  list-style: none; }

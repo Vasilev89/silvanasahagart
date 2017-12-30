@@ -1,8 +1,25 @@
 @import 'basscss';
 @import 'vars';
+@import 'buttons';
 @import 'tools';
 @import 'objects';
 @import 'settings';
 @import 'type';
-@import 'elements';
+@import 'social-icons';
 @import 'basscss';
+@import 'paintings-element';
+@import 'form-element';
+
+.container-fluid{
+padding-left:20px;
+padding-right:20px;
+max-width:$container-max-width;
+}
+
+ul{
+	padding-left:0px;
+}
+
+ul li{
+list-style:none;
+}

@@ -1,15 +1,3 @@
-ul li{
-list-style:none;
-}
-
-
-.ss-component-arwtworks-paintings li{
-	img{
-		max-width:100%;
-	}
-}
-
-
 .ss-social-icons{
 	text-align:center;
 	padding-left:0px;
@@ -98,14 +86,6 @@ list-style:none;
                     .social_media_icon:hover:before {
                         border-color: #d6dfde;
                         background: #d6dfde;
-                        /*
-                            VM: Asked for hover rotation to be removed
-                            -webkit-transform: rotate(45deg);
-                            -moz-transform: rotate(45deg);
-                            -ms-transform: rotate(45deg);
-                            -o-transform: rotate(45deg);
-                            transform: rotate(45deg);
-                        */
                     }
                     .social_media_icon:hover:after {
                         color: #fff;
@@ -125,3 +105,5 @@ list-style:none;
                     .social_media_icon.pinterest:after {
                         content: "\f231";
                     }
+
+
