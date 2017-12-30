@@ -17,10 +17,13 @@ font-weight:400;
 
 h1{
 	@include font-size(40px);
+	margin-bottom: $unrelated-spacing;
 }
 
 h2{
 	@include font-size(30px);	
+	color:$body-copy-default;
+	margin-bottom: $related-spacing;
 }
 
 .ss-hero{
@@ -29,4 +32,12 @@ h2{
 font-weight:200;
 @include font-size(16px);
 line-height:30px;
+}
+
+.ss-component-arwtworks-paintings-caption{
+	color:$caption-copy;
+	display: block;
+	font-weight:300;
+	@include font-size(14px);
+	margin-bottom: $related-spacing;
 }

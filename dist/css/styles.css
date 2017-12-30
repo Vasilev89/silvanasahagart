@@ -813,11 +813,14 @@ h1, h2, h3 {
 
 h1 {
   font-size: 400pxpx;
-  font-size: 40pxrem; }
+  font-size: 40pxrem;
+  margin-bottom: 50px; }
 
 h2 {
   font-size: 300pxpx;
-  font-size: 30pxrem; }
+  font-size: 30pxrem;
+  color: #666666;
+  margin-bottom: 30px; }
 
 .ss-hero {
   font-weight: 200;
@@ -825,8 +828,19 @@ h2 {
   font-size: 16pxrem;
   line-height: 30px; }
 
+.ss-component-arwtworks-paintings-caption {
+  color: #313541;
+  display: block;
+  font-weight: 300;
+  font-size: 140pxpx;
+  font-size: 14pxrem;
+  margin-bottom: 30px; }
+
 ul li {
   list-style: none; }
+
+.ss-social-icons {
+  margin-bottom: 50px; }
 
 .ss-component-arwtworks-paintings li img {
   max-width: 100%; }
