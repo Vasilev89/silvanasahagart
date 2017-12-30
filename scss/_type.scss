@@ -29,6 +29,7 @@ h2{
 .ss-hero{
 @extend .ss-body-copy-default;
 @extend .ss-copy-align-center;
+margin:$unrelated-spacing, 0px $unrelated-spacing, 0px;
 font-weight:200;
 @include font-size(16px);
 line-height:30px;

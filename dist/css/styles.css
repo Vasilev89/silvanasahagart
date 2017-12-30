@@ -823,6 +823,7 @@ h2 {
   margin-bottom: 30px; }
 
 .ss-hero {
+  margin: 50px, 0px 50px, 0px;
   font-weight: 200;
   font-size: 160pxpx;
   font-size: 16pxrem;
@@ -839,11 +840,122 @@ h2 {
 ul li {
   list-style: none; }
 
-.ss-social-icons {
-  margin-bottom: 50px; }
-
 .ss-component-arwtworks-paintings li img {
   max-width: 100%; }
+
+.ss-social-icons {
+  text-align: center;
+  padding-left: 0px; }
+
+.social_links_item {
+  margin: 0 5px 0 0;
+  width: auto;
+  height: auto;
+  display: inline-block; }
+
+.social_links_item:last-child {
+  margin-right: 0; }
+
+.social_links_item a,
+#footer .social_links_item a {
+  position: relative;
+  padding: 10px;
+  width: 26px;
+  height: 26px;
+  float: left;
+  text-indent: -9999px; }
+
+.social_media_icon,
+.device-highres .social_media_icon {
+  float: left;
+  text-indent: 0;
+  text-align: center;
+  border: 0;
+  background: none;
+  margin: 0;
+  width: 26px;
+  height: 26px; }
+
+.social_media_icon:before {
+  content: '.';
+  text-align: left;
+  text-indent: -9999px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  transform-style: preserve-3d;
+  display: block;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  position: absolute;
+  z-index: 1;
+  top: 7px;
+  left: 7px;
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  transition: background 300ms ease-in-out, border 300ms ease-in-out, -webkit-transform 400ms cubic-bezier(0.87, 0.17, 0.18, 0.85);
+  -webkit-transition: background 300ms ease-in-out, border 300ms ease-in-out, -webkit-transform 400ms cubic-bezier(0.87, 0.17, 0.18, 0.85);
+  overflow: hidden;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.social_media_icon:after {
+  display: block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 17px;
+  line-height: 23px;
+  text-rendering: auto;
+  position: relative;
+  z-index: 2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: color 300ms ease-in-out;
+  -webkit-transition: color 300ms ease-in-out;
+  color: #7d7d7d;
+  text-align: center; }
+
+.social_media_icon:hover:before {
+  border-color: #d6dfde;
+  background: #d6dfde;
+  /*
+                            VM: Asked for hover rotation to be removed
+                            -webkit-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        */ }
+
+.social_media_icon:hover:after {
+  color: #fff; }
+
+.social_media_icon.facebook:after {
+  content: "\f09a"; }
+
+.social_media_icon.twitter:after {
+  content: "\f099"; }
+
+.social_media_icon.instagram:after {
+  content: "\f16d"; }
+
+.social_media_icon.tumblr:after {
+  content: "\f173"; }
+
+.social_media_icon.pinterest:after {
+  content: "\f231"; }
 
 /* Basscss Type Scale */
 .h1 {
