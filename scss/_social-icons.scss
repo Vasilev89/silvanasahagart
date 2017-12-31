@@ -1,6 +1,9 @@
 .ss-social-icons{
 	text-align:center;
 	padding-left:0px;
+    li{
+        cursor:pointer;
+    }
 }
 
         .social_links_item {
@@ -95,6 +98,9 @@
                     }
                     .social_media_icon.twitter:after {
                         content: "\f099";
+                    }
+                    .social_media_icon.envelope:after {
+                        content: "\f003";
                     }
                     .social_media_icon.instagram:after {
                         content: "\f16d";

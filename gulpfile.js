@@ -10,6 +10,11 @@ var browserSync = require('browser-sync').create();
 
 var babel = require("gulp-babel");
 
+gulp.task('export-fonts', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('fonts'))
+});
+
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
 
@@ -47,4 +52,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['serve', 'sass', 'watch', 'scripts']);
+gulp.task('default', ['serve', 'export-fonts', 'sass', 'watch', 'scripts']);
