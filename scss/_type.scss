@@ -24,6 +24,12 @@ font-weight:400;
 h1{
 	@include font-size(40px);
 }
+.ss-logo{
+	@include mq(mobile){
+		float:left;
+		text-align:left;
+	}
+}
 
 h2{
 @include font-size(30px);	

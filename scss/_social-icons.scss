@@ -1,6 +1,10 @@
 .ss-social-icons{
 	text-align:center;
 	padding-left:0px;
+    @include mq(mobile){
+        float:right;
+        text-align:right;
+    }
     li{
         cursor:pointer;
     }

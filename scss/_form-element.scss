@@ -13,8 +13,14 @@ padding:20px;
 	.ss-form-email{
 	display:block;
 	padding:10px;
-	margin:10px 0px 10px 0px;
+	margin:10px 0px 20px 0px;
 	width:90%;
+	}
+
+	.ss-form-disclaimer{
+	display:block;
+	@include font-size(13px);
+	margin-top: 20px;
 	}
 
 }

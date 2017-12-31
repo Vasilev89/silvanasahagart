@@ -1,6 +1,8 @@
 .ss-component-arwtworks-paintings li{
-padding:0px 20px 0px 20px;
 	text-align:center;
+	@include mq(mobile){
+	float:left;
+	}
 	img{
 		max-width:100%;
 	}
