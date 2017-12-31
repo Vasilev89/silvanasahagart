@@ -4084,6 +4084,14 @@ h2 {
   .ss-component-arwtworks-paintings li img {
     max-width: 100%; }
 
+@media only screen and (min-width: 480px) {
+  .ss-component-arwtworks-paintings li:nth-child(even) {
+    float: right; } }
+
+.ss-component-arwtworks-paintings li:nth-child(3) {
+  float: none;
+  margin: auto; }
+
 .ss-form {
   background: #FAFBFB;
   padding: 20px; }
@@ -4103,9 +4111,10 @@ h2 {
     margin-top: 20px; }
 
 .container-fluid {
+  margin: auto;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 1024px; }
+  max-width: 980px; }
 
 ul {
   padding-left: 0px; }
