@@ -16,19 +16,36 @@ line-height:30px;
 text-align:center;
 }
 
+.ss-copy-align-left{
+text-align:left;
+}
+
+.ss-copy-align-right{
+text-align:right;
+}
+
+header{
+@include flexbox();
+@include flex-direction(column);
+	@include mq(mobile){
+		@include flex-direction(row);
+	}
+}
+
 h1, h2, h3{
 font-weight:400;
 @extend .ss-copy-align-center;
 }
 
-h1{
-	@include font-size(40px);
-}
+
 .ss-logo{
 	@include mq(mobile){
-		float:left;
 		text-align:left;
-	}
+	}	
+}
+
+h1{
+	@include font-size(40px);
 }
 
 h2{
@@ -39,11 +56,16 @@ margin-bottom: $related-spacing;
 
 .ss-hero{
 @extend .ss-body-copy-default;
-@extend .ss-copy-align-center;
 margin:$unrelated-spacing, 0px $unrelated-spacing, 0px;
 font-weight:200;
 @include font-size(16px);
+@extend .ss-copy-align-left;
 line-height:30px;
+}
+
+.ss-component-update-form-heading{
+margin-top: $related-spacing;
+margin-bottom: $related-spacing;
 }
 
 .ss-component-arwtworks-paintings-caption{
@@ -59,4 +81,8 @@ text-align:left;
 @include font-size(14px);
 line-height:30px;
 margin:0px;
+}
+
+.ss-component-introduction-title{
+@extend .ss-copy-align-left;	
 }

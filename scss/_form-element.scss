@@ -1,20 +1,24 @@
-.ss-form{
+.ss-component-update-form{
 background: $ss-lign-fill;
+}
+.ss-form{
+max-width:$container-max-width;
+margin:auto;
 padding:20px;
-
+@include flexbox();
+@include flex-direction(column);
+@include mq(tablet){
+		@include flex-direction(row);
+}
 	
 	.ss-form-submit{
 	@extend .ss-button-primary;
-	display:block;
-	margin:auto;
-	width:50%;
 	}
 
 	.ss-form-email{
 	display:block;
 	padding:10px;
 	margin:10px 0px 20px 0px;
-	width:90%;
 	}
 
 	.ss-form-disclaimer{

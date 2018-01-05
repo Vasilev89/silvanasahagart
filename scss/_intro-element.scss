@@ -1,0 +1,34 @@
+.ss-component-introduction{
+overflow:hidden;
+position:relative;
+@include flexbox();
+margin-top: $related-spacing;
+@include flex-direction(column);
+	@include mq(tablet){
+		@include flex-direction(row);
+}
+
+figure{
+padding:0px;
+margin:0px;
+}
+
+.ss-component-introduction-copy-holder{
+	z-index: 20;
+	background: $ss-lign-fill;
+}
+
+.angle{
+background: $ss-lign-fill;
+position: absolute;
+top: 0;
+z-index: 10;
+left: 51%;
+height: 420px;
+width: 50px;
+-webkit-transform: rotate(6deg);
+-moz-transform: rotate(6deg);
+transform: rotate(6deg);
+}
+
+}

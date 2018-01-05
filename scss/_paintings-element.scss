@@ -1,22 +1,21 @@
-.ss-component-arwtworks-paintings li{
-	text-align:center;
+.ss-component-arwtworks-paintings{
+@include flexbox();
+@include flex-direction(column);
 	@include mq(mobile){
-			float:left;
+		@include flex-direction(row);
 	}
 
-	img{
-		max-width:100%;
+	li{
+		text-align:center;
+		@include mq(mobile){
+			margin-left:20px;
+		}
+	}	
+.ss-component-arwtworks-paintings-caption{
+padding-left:20px;
+	@include mq(mobile){
+			padding-left:0px;
 	}
-	
 }
 
-.ss-component-arwtworks-paintings li:nth-child(even){
-	@include mq(mobile){
-		float:right;
-	}
-}
-
-.ss-component-arwtworks-paintings li:nth-child(3){
-	float:none;
-	margin:auto;
 }

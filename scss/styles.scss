@@ -11,6 +11,11 @@
 @import 'basscss';
 @import 'paintings-element';
 @import 'form-element';
+@import 'intro-element';
+
+img{
+	max-width:100%;
+}
 
 .container-fluid{
 margin:auto;
