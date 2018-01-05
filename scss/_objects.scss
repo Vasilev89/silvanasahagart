@@ -30,6 +30,14 @@
 </div>
  */
 
+.separator{
+height: 3px;
+background: #e4e4e4;
+z-index: 1;
+width: 20%;
+margin: auto;
+}
+
 @mixin media-object($margin:10px, $position: left, $formating-context: 'overflow', $media: '.media', $block: '.block') {
     @include pie-clearfix; // or extend a .clearfix class
     #{unquote($block)} {

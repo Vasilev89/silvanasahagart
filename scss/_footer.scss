@@ -1,0 +1,24 @@
+.ss-component-footer{	
+@include flexbox();
+@include flex-direction(column);
+
+@include mq(mobile){
+		@include flex-direction(row);
+	}
+
+.ss-component-footer-reserved-rights{
+text-align:right;	
+}
+
+.ss-social-icons{
+	text-align:center;
+}
+
+.ss-component-footer-logo{
+	text-align:center;
+}
+
+.ss-component-footer-logo, .ss-social-icons, .ss-component-footer-reserved-rights{
+	@include align-self(center);
+	}
+}

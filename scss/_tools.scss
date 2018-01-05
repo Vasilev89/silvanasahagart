@@ -2,6 +2,19 @@
 // FlexBox
 //============================================================
 
+
+.ss-container-format{
+max-width:$container-max-width;
+margin:auto;
+}
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
 // Flexbox display
 @mixin flexbox() {
   display: -webkit-box;
@@ -163,12 +176,12 @@
 // Typography
 //============================================================
 
-// An rem font-size mixin providing fallback to px
-@mixin font-size($sizeValue: 1.4) {
-    $remValue: $sizeValue;
-    $pxValue: ($sizeValue * 10);
-    font-size: #{$pxValue}px;
-    font-size: #{$remValue}rem;
+$base_font_size: 16;
+
+@mixin font-size($pixels, $weight : normal) {
+font-size: $pixels + px;
+font-size: ( $pixels / $base_font_size ) + rem;
+font-weight: $weight;
 }
 
 // Requires inline-block or block for proper styling

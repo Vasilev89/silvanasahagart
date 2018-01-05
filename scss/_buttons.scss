@@ -1,7 +1,14 @@
 .ss-button-primary{
-	border:0px;
-	padding:10px;
-	cursor:pointer;
-	background: $primary-button-color;
-	color:#fff;
+	border: 0px;
+	@include font-size(14);
+    padding: 10px;
+    cursor: pointer;
+    background: $primary-cta-color;
+    color: #fff;
+    @include border-radius(3px);
+    height: 50px;
+    margin-top: 8px !important;
+	i{
+	padding-left:10px;
+	}
 }

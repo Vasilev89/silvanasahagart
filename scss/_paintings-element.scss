@@ -1,3 +1,9 @@
+.ss-component-artworks{
+	position: relative;
+}
+
+
+
 .ss-component-arwtworks-paintings{
 @include flexbox();
 @include flex-direction(column);

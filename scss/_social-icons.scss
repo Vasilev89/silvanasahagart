@@ -1,4 +1,5 @@
 .ss-social-icons{
+    @include align-self(center);
 	text-align:center;
 	padding-left:0px;
     @include mq(mobile){

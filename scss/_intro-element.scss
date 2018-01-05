@@ -1,11 +1,15 @@
 .ss-component-introduction{
 overflow:hidden;
 position:relative;
-@include flexbox();
 margin-top: $related-spacing;
+@include flexbox();
 @include flex-direction(column);
 	@include mq(tablet){
 		@include flex-direction(row);
+}
+
+h2{
+margin-top: $related-spacing;
 }
 
 figure{
@@ -14,6 +18,8 @@ margin:0px;
 }
 
 .ss-component-introduction-copy-holder{
+	box-sizing:border-box;
+	padding:0px 20px 10px 20px;
 	z-index: 20;
 	background: $ss-lign-fill;
 }
