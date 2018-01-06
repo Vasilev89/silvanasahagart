@@ -3177,20 +3177,25 @@ header {
       flex-direction: row; } }
 
 h1, h2, h3 {
-  font-weight: 400; }
+  font-weight: 400;
+  margin: 0px; }
 
 @media only screen and (min-width: 480px) {
   .ss-logo {
     text-align: left; } }
 
 h1 {
-  font-size: 33px;
-  font-size: 2.0625rem;
+  margin-top: 40px;
+  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: normal;
   -webkit-align-self: center;
   -moz-align-self: center;
   -ms-align-self: center;
   align-self: center; }
+  @media only screen and (min-width: 480px) {
+    h1 {
+      margin-top: 0px; } }
 
 h2 {
   font-size: 25px;
@@ -3226,20 +3231,24 @@ h2 {
   font-size: 0.875rem;
   font-weight: normal;
   line-height: 30px;
-  margin: 0px; }
+  margin: 0px;
+  padding: 20px; }
 
 .ss-component-introduction-title {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  margin-top: 30px; }
 
 .ss-section-sign-up-disclaimer p {
   font-size: 16px;
   font-size: 1rem;
   font-weight: normal;
-  margin-bottom: 30px; }
+  padding-bottom: 0px; }
 
 .ss-form-disclaimer {
   display: block;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .ss-social-icons {
   -webkit-align-self: center;
@@ -3247,10 +3256,12 @@ h2 {
   -ms-align-self: center;
   align-self: center;
   text-align: center;
-  padding-left: 0px; }
+  padding-left: 0px;
+  margin-top: 40px; }
   @media only screen and (min-width: 480px) {
     .ss-social-icons {
       float: right;
+      margin-top: 20px;
       text-align: right; } }
   .ss-social-icons li {
     cursor: pointer; }
@@ -3375,13 +3386,18 @@ h2 {
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
       -ms-flex-direction: row;
-      flex-direction: row; } }
+      flex-direction: row;
+      max-width: 980px;
+      margin: auto; } }
   .ss-component-footer .ss-component-footer-reserved-rights {
     text-align: right; }
   .ss-component-footer .ss-social-icons {
     text-align: center; }
   .ss-component-footer .ss-component-footer-logo {
     text-align: center; }
+    @media only screen and (min-width: 480px) {
+      .ss-component-footer .ss-component-footer-logo {
+        text-align: left; } }
   .ss-component-footer .ss-component-footer-logo, .ss-component-footer .ss-social-icons, .ss-component-footer .ss-component-footer-reserved-rights {
     -webkit-align-self: center;
     -moz-align-self: center;
@@ -3412,11 +3428,9 @@ h2 {
     @media only screen and (min-width: 480px) {
       .ss-component-arwtworks-paintings li {
         margin-left: 20px; } }
-  .ss-component-arwtworks-paintings .ss-component-arwtworks-paintings-caption {
-    padding-left: 20px; }
-    @media only screen and (min-width: 480px) {
-      .ss-component-arwtworks-paintings .ss-component-arwtworks-paintings-caption {
-        padding-left: 0px; } }
+  @media only screen and (min-width: 480px) {
+    .ss-component-arwtworks-paintings .ss-component-arwtworks-paintings-caption {
+      padding-left: 0px; } }
 
 .ss-button-primary {
   border: 0px;
@@ -3503,14 +3517,26 @@ h2 {
       -moz-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row; } }
-  .ss-component-introduction h2 {
-    margin-top: 30px; }
   .ss-component-introduction figure {
+    background: url("../images/silvana.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/silvana.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/silvana.jpg', sizingMethod='scale')";
+    background-position: 0% 23%;
     padding: 0px;
-    margin: 0px; }
+    margin: 0px;
+    min-height: 250px; }
   .ss-component-introduction .ss-component-introduction-copy-holder {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0px 20px 10px 20px;
+    min-height: 250px;
+    position: relative;
+    padding: 0px 20px 10px 40px;
     z-index: 20;
     background: #FAFBFB; }
   .ss-component-introduction .angle {
@@ -3518,18 +3544,18 @@ h2 {
     position: absolute;
     top: 0;
     z-index: 10;
-    left: 51%;
+    left: -30px;
     height: 420px;
     width: 50px;
     -webkit-transform: rotate(6deg);
-    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
     transform: rotate(6deg); }
 
 .ss-component {
   margin-top: 40px; }
 
 ul {
-  margin-bottom: 0px; }
+  margin: 0px; }
 
 ul {
   padding-left: 0px; }

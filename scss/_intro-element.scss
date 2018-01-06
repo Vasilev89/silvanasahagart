@@ -1,3 +1,5 @@
+$hero-image-height:250px;
+
 .ss-component-introduction{
 overflow:hidden;
 position:relative;
@@ -8,33 +10,32 @@ margin-top: $related-spacing;
 		@include flex-direction(row);
 }
 
-h2{
-margin-top: $related-spacing;
-}
-
 figure{
+@include bg-cover('../images/silvana.jpg', no-repeat);
+background-position:0% 23%;
 padding:0px;
 margin:0px;
+min-height:$hero-image-height;
 }
 
 .ss-component-introduction-copy-holder{
-	box-sizing:border-box;
-	padding:0px 20px 10px 20px;
+	@include box-sizing(border-box);
+	min-height:$hero-image-height;
+	position: relative;
+	padding:0px 20px 10px 40px;
 	z-index: 20;
 	background: $ss-lign-fill;
 }
 
-.angle{
-background: $ss-lign-fill;
-position: absolute;
-top: 0;
-z-index: 10;
-left: 51%;
-height: 420px;
-width: 50px;
--webkit-transform: rotate(6deg);
--moz-transform: rotate(6deg);
-transform: rotate(6deg);
-}
+	.angle{
+	background: $ss-lign-fill;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	left: -30px;
+	height: 420px;
+	width: 50px;
+	@include transform(rotate(6deg))
+	}
 
 }

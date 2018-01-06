@@ -2,10 +2,19 @@
 // FlexBox
 //============================================================
 
-
 .ss-container-format{
 max-width:$container-max-width;
 margin:auto;
+}
+
+@mixin bg-cover($bg-img-path, $bg-options) {
+  background: url($bg-img-path) $bg-options;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$bg-img-path}', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='#{$bg-img-path}', sizingMethod='scale')";
 }
 
 

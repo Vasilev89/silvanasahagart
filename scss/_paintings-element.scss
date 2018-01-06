@@ -2,8 +2,6 @@
 	position: relative;
 }
 
-
-
 .ss-component-arwtworks-paintings{
 @include flexbox();
 @include flex-direction(column);
@@ -18,7 +16,6 @@
 		}
 	}	
 .ss-component-arwtworks-paintings-caption{
-padding-left:20px;
 	@include mq(mobile){
 			padding-left:0px;
 	}

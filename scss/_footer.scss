@@ -3,8 +3,10 @@
 @include flex-direction(column);
 
 @include mq(mobile){
-		@include flex-direction(row);
-	}
+	@include flex-direction(row);
+	max-width:$container-max-width;
+	margin:auto;
+}
 
 .ss-component-footer-reserved-rights{
 text-align:right;	
@@ -16,6 +18,9 @@ text-align:right;
 
 .ss-component-footer-logo{
 	text-align:center;
+	@include mq(mobile){
+	text-align:left;
+	}
 }
 
 .ss-component-footer-logo, .ss-social-icons, .ss-component-footer-reserved-rights{
