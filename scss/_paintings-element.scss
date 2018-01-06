@@ -5,19 +5,19 @@
 .ss-component-arwtworks-paintings{
 @include flexbox();
 @include flex-direction(column);
-	@include mq(mobile){
+	@include mq(tablet){
 		@include flex-direction(row);
 	}
-
+	
 	li{
 		text-align:center;
-		@include mq(mobile){
-			margin-left:20px;
-		}
 	}	
+
 .ss-component-arwtworks-paintings-caption{
-	@include mq(mobile){
-			padding-left:0px;
+	text-align:center;
+
+	@include mq(desktop){
+		text-align:left;		
 	}
 }
 

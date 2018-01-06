@@ -1,8 +1,9 @@
-.ss-component-footer{	
+.ss-component-footer{
 @include flexbox();
 @include flex-direction(column);
 
-@include mq(mobile){
+@include mq(tablet){
+	margin-top: 0px !important;	
 	@include flex-direction(row);
 	max-width:$container-max-width;
 	margin:auto;
@@ -18,9 +19,14 @@ text-align:right;
 
 .ss-component-footer-logo{
 	text-align:center;
-	@include mq(mobile){
+	margin-top: 0px;
+	@include mq(tablet){
 	text-align:left;
 	}
+}
+
+.ss-social-icons{
+margin-top: 0px
 }
 
 .ss-component-footer-logo, .ss-social-icons, .ss-component-footer-reserved-rights{

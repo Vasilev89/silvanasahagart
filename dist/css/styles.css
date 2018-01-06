@@ -3381,8 +3381,9 @@ h2 {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
-  @media only screen and (min-width: 480px) {
+  @media only screen and (min-width: 832px) {
     .ss-component-footer {
+      margin-top: 0px !important;
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
       -ms-flex-direction: row;
@@ -3394,10 +3395,13 @@ h2 {
   .ss-component-footer .ss-social-icons {
     text-align: center; }
   .ss-component-footer .ss-component-footer-logo {
-    text-align: center; }
-    @media only screen and (min-width: 480px) {
+    text-align: center;
+    margin-top: 0px; }
+    @media only screen and (min-width: 832px) {
       .ss-component-footer .ss-component-footer-logo {
         text-align: left; } }
+  .ss-component-footer .ss-social-icons {
+    margin-top: 0px; }
   .ss-component-footer .ss-component-footer-logo, .ss-component-footer .ss-social-icons, .ss-component-footer .ss-component-footer-reserved-rights {
     -webkit-align-self: center;
     -moz-align-self: center;
@@ -3417,7 +3421,7 @@ h2 {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
-  @media only screen and (min-width: 480px) {
+  @media only screen and (min-width: 832px) {
     .ss-component-arwtworks-paintings {
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
@@ -3425,12 +3429,11 @@ h2 {
       flex-direction: row; } }
   .ss-component-arwtworks-paintings li {
     text-align: center; }
-    @media only screen and (min-width: 480px) {
-      .ss-component-arwtworks-paintings li {
-        margin-left: 20px; } }
-  @media only screen and (min-width: 480px) {
-    .ss-component-arwtworks-paintings .ss-component-arwtworks-paintings-caption {
-      padding-left: 0px; } }
+  .ss-component-arwtworks-paintings .ss-component-arwtworks-paintings-caption {
+    text-align: center; }
+    @media only screen and (min-width: 1024px) {
+      .ss-component-arwtworks-paintings .ss-component-arwtworks-paintings-caption {
+        text-align: left; } }
 
 .ss-button-primary {
   border: 0px;
