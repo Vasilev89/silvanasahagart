@@ -3,6 +3,7 @@
 }
 
 .ss-component-arwtworks-paintings{
+-js-display: flex;
 @include flexbox();
 @include flex-direction(column);
 	@include mq(tablet){

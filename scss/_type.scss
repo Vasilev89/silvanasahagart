@@ -25,6 +25,7 @@ text-align:right;
 }
 
 header{
+-js-display: flex;
 @include flexbox();
 @include flex-direction(column);
 	@include mq(mobile){

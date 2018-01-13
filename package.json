@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "basscss-sass": "^4.0.0",
+    "flexibility": "^2.0.1",
     "font-awesome": "^4.7.0",
     "lazy-load-images": "^1.0.1",
     "mq-sass": "^0.8.0"

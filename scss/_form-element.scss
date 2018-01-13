@@ -5,6 +5,7 @@ background: $ss-lign-fill;
 max-width:$container-max-width;
 margin:auto;
 padding:20px;
+-js-display: flex;
 @include flexbox();
 @include flex-direction(column);
 @include mq(tablet){

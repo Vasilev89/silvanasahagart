@@ -3160,6 +3160,7 @@ body {
   text-align: right; }
 
 header {
+  -js-display: flex;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -3372,6 +3373,7 @@ h2 {
   content: "\f231"; }
 
 .ss-component-footer {
+  -js-display: flex;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -3412,6 +3414,7 @@ h2 {
   position: relative; }
 
 .ss-component-arwtworks-paintings {
+  -js-display: flex;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -3460,6 +3463,7 @@ h2 {
   max-width: 980px;
   margin: auto;
   padding: 20px;
+  -js-display: flex;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -3505,6 +3509,7 @@ h2 {
   overflow: hidden;
   position: relative;
   margin-top: 30px;
+  -js-display: flex;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;

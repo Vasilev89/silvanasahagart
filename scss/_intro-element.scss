@@ -4,6 +4,7 @@ $hero-image-height:250px;
 overflow:hidden;
 position:relative;
 margin-top: $related-spacing;
+-js-display: flex;
 @include flexbox();
 @include flex-direction(column);
 	@include mq(tablet){
