@@ -31,6 +31,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.4",
     "jshint": "^2.9.5",
     "vinyl-source-stream": "^1.1.0"
   },
@@ -38,7 +39,10 @@
     "basscss-sass": "^4.0.0",
     "flexibility": "^2.0.1",
     "font-awesome": "^4.7.0",
+    "gulp-htmlmin": "^4.0.0",
+    "jquery": "^3.3.1",
     "lazy-load-images": "^1.0.1",
-    "mq-sass": "^0.8.0"
+    "mq-sass": "^0.8.0",
+    "photoswipe": "^4.1.2"
   }
 }

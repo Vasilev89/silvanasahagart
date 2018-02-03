@@ -12,10 +12,12 @@
 @import 'buttons';
 @import 'form-element';
 @import 'intro-element';
+@import 'photoswipe';
 
 .ss-component{
-	margin-top: $unrelated-spacing;
+margin-top: $unrelated-spacing;
 }
+
 ul{
 margin:0px;
 }

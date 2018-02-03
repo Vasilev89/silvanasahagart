@@ -4,7 +4,6 @@
 @include flex-direction(column);
 
 @include mq(tablet){
-	margin-top: 0px !important;	
 	@include flex-direction(row);
 	max-width:$container-max-width;
 	margin:auto;
@@ -31,6 +30,7 @@ margin-top: 0px
 }
 
 .ss-component-footer-logo, .ss-social-icons, .ss-component-footer-reserved-rights{
+	@include font-size(14);
 	@include align-self(center);
 	}
 }

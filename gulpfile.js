@@ -16,7 +16,7 @@ gulp.task('export-fonts', function() {
 });
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass', 'vendor', 'scripts'], function() {
 
     browserSync.init({
         server: "./"
@@ -35,15 +35,20 @@ gulp.task('sass', function() {
 });
 
 //Transpile, Concatonate and Minify Javascript
+gulp.task('vendor', function() {
+    return gulp.src('js/vendor/*.js')
+        .pipe(concat('vendors.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.stream());
+});
+
 gulp.task('scripts', function() {
     return gulp.src('js/*.js')
-        .pipe(babel())
-        .pipe(gulp.dest("dist"))
-        .pipe(concat('all.js'))
-        .pipe(concat('flexibility.js'))
-        .pipe(rename('all.min.js'))
+        .pipe(concat('core.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('dist/js'))
+        .pipe(browserSync.stream());
 });
 
 // Watch Files For Changes
@@ -53,4 +58,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['serve', 'export-fonts', 'sass', 'watch', 'scripts']);
+gulp.task('default', ['serve', 'export-fonts', 'sass', 'watch', 'vendor', 'scripts']);
