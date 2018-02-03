@@ -38,7 +38,6 @@ gulp.task('sass', function() {
 gulp.task('vendor', function() {
     return gulp.src('js/vendor/*.js')
         .pipe(concat('vendors.js'))
-        .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.stream());
 });
@@ -46,7 +45,6 @@ gulp.task('vendor', function() {
 gulp.task('scripts', function() {
     return gulp.src('js/*.js')
         .pipe(concat('core.js'))
-        .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.stream());
 });
