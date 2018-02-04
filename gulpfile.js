@@ -56,4 +56,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['serve', 'export-fonts', 'sass', 'watch', 'vendor', 'scripts']);
+gulp.task('default', ['serve', 'export-fonts', 'sass', 'vendor', 'scripts', 'watch']);

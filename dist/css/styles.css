@@ -3101,9 +3101,158 @@
 .display-none {
   display: none !important; }
 
+.ss-center-item {
+  display: block;
+  margin: auto; }
+
 .ss-container-format, .ss-section-sign-up-disclaimer p, .ss-form-disclaimer {
   max-width: 980px;
   margin: auto; }
+
+/****** buttons' style starts here ******/
+.ss-button-primary {
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: normal;
+  text-decoration: inherit;
+  border: 3px solid;
+  padding: 13px 85px;
+  margin: 10px 10px 10px 0px; }
+
+.button:hover {
+  -webkit-transition: 200ms ease-in;
+  -moz-transition: 200ms ease-in;
+  -o-transition: 200ms ease-in;
+  transition: 200ms ease-in; }
+
+/****** blue buttons ******/
+.button1 {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #34a8c8;
+  /* #34a8c8 */
+  color: #34a8c8; }
+
+.button1:hover {
+  border: 3px solid rgba(52, 168, 200, 0.7);
+  color: rgba(52, 168, 200, 0.7); }
+
+.button2 {
+  background-color: #34a8c8;
+  border-color: #34a8c8;
+  color: white; }
+
+.button2:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #34a8c8;
+  color: #34a8c8; }
+
+.button3 {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #34a8c8;
+  color: #34a8c8; }
+
+.button3:hover {
+  background-color: #34a8c8;
+  border-color: #34a8c8;
+  color: white; }
+
+/****** green buttons ******/
+.button4 {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #7cbf42;
+  /* #7cbf42 */
+  color: #7cbf42; }
+
+.button4:hover {
+  border: 3px solid rgba(124, 191, 66, 0.7);
+  color: rgba(124, 191, 66, 0.7); }
+
+.button5 {
+  background-color: #7cbf42;
+  border-color: #7cbf42;
+  color: white; }
+
+.button5:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #7cbf42;
+  color: #7cbf42; }
+
+.button6 {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #7cbf42;
+  color: #7cbf42; }
+
+.button6:hover {
+  background-color: #7cbf42;
+  border-color: #7cbf42;
+  color: white; }
+
+/******  red buttons ******/
+.button7 {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #e2413e;
+  /* #e2413e */
+  color: #e2413e; }
+
+.button7:hover {
+  border: 3px solid rgba(226, 65, 62, 0.8);
+  color: rgba(226, 65, 62, 0.8); }
+
+.button8 {
+  background-color: #e2413e;
+  border-color: #e2413e;
+  color: white; }
+
+.button8:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #e2413e;
+  color: #e2413e; }
+
+.button9 {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #e2413e;
+  color: #e2413e; }
+
+.button9:hover {
+  background-color: #e2413e;
+  border-color: #e2413e;
+  color: white; }
+
+/******  grey buttons ******/
+.button10 {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #95a5a6;
+  /* #95a5a6 */
+  color: #95a5a6; }
+
+.button10:hover {
+  border: 3px solid rgba(149, 165, 166, 0.8);
+  color: rgba(149, 165, 166, 0.8); }
+
+.button11 {
+  background-color: #95a5a6;
+  border-color: #95a5a6;
+  color: white; }
+
+.button11:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #95a5a6;
+  color: #95a5a6; }
+
+.button12 {
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #95a5a6;
+  color: #95a5a6; }
+
+.button12:hover {
+  background-color: #95a5a6;
+  border-color: #95a5a6;
+  color: white; }
 
 /*
 .box{
@@ -3439,24 +3588,6 @@ h2 {
     @media only screen and (min-width: 1024px) {
       .ss-component-arwtworks-paintings .ss-component-arwtworks-paintings-caption {
         text-align: left; } }
-
-.ss-button-primary {
-  border: 0px;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: normal;
-  padding: 10px;
-  cursor: pointer;
-  background: #5694e0;
-  color: #fff;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  height: 50px;
-  margin-top: 8px !important; }
-  .ss-button-primary i {
-    padding-left: 10px; }
 
 .ss-component-update-form {
   background: #FAFBFB; }
@@ -3799,7 +3930,7 @@ h2 {
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-  background: url(./images/PhotoSwipe/default-skin.png) 0 0 no-repeat;
+  background: url(../images/PhotoSwipe/default-skin.png) 0 0 no-repeat;
   background-size: 264px 88px;
   width: 44px;
   height: 44px; }
@@ -3809,7 +3940,7 @@ h2 {
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
-    background-image: url(./images/PhotoSwipe/default-skin.svg); }
+    background-image: url(../images/PhotoSwipe/default-skin.svg); }
   .pswp--svg .pswp__button--arrow--left,
   .pswp--svg .pswp__button--arrow--right {
     background: none; } }
@@ -4042,11 +4173,8 @@ a.pswp__share--download:hover {
   visibility: hidden; }
 
 /*
-
   5. Loading indicator (preloader)
-
   You can play with it here - http://codepen.io/dimsemenov/pen/yyBWoR
-
  */
 .pswp__preloader {
   width: 44px;
@@ -4071,7 +4199,7 @@ a.pswp__share--download:hover {
 
 .pswp__preloader--active .pswp__preloader__icn {
   /* We use .gif in browsers that don't support CSS animation */
-  background: url(preloader.gif) 0 0 no-repeat; }
+  background: url(../images/PhotoSwipe/preloader.gif) 0 0 no-repeat; }
 
 .pswp--css_animation .pswp__preloader--active {
   opacity: 1; }
