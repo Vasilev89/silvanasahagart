@@ -43,6 +43,7 @@
     "jquery": "^3.3.1",
     "lazy-load-images": "^1.0.1",
     "mq-sass": "^0.8.0",
+    "normalize-scss": "^7.0.1",
     "photoswipe": "^4.1.2"
   }
 }

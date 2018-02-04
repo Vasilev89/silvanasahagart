@@ -3101,7 +3101,7 @@
 .display-none {
   display: none !important; }
 
-.ss-center-item {
+.ss-center-item, .ss-component-arwtworks-cta button {
   display: block;
   margin: auto; }
 
@@ -3131,125 +3131,125 @@
   transition: 200ms ease-in; }
 
 /****** blue buttons ******/
-.button1 {
+.ss-button-variation-1 {
   background-color: rgba(255, 255, 255, 0);
   border-color: #34a8c8;
   /* #34a8c8 */
   color: #34a8c8; }
 
-.button1:hover {
+.ss-button-variation-1:hover {
   border: 3px solid rgba(52, 168, 200, 0.7);
   color: rgba(52, 168, 200, 0.7); }
 
-.button2 {
+.ss-button-variation-2 {
   background-color: #34a8c8;
   border-color: #34a8c8;
   color: white; }
 
-.button2:hover {
+.ss-button-variation-2:hover {
   background-color: rgba(255, 255, 255, 0);
   border-color: #34a8c8;
   color: #34a8c8; }
 
-.button3 {
+.ss-button-variation-3 {
   background-color: rgba(255, 255, 255, 0);
   border-color: #34a8c8;
   color: #34a8c8; }
 
-.button3:hover {
+.ss-button-variation-3:hover {
   background-color: #34a8c8;
   border-color: #34a8c8;
   color: white; }
 
 /****** green buttons ******/
-.button4 {
+.ss-button-variation-4 {
   background-color: rgba(255, 255, 255, 0);
   border-color: #7cbf42;
   /* #7cbf42 */
   color: #7cbf42; }
 
-.button4:hover {
+.ss-button-variation-4:hover {
   border: 3px solid rgba(124, 191, 66, 0.7);
   color: rgba(124, 191, 66, 0.7); }
 
-.button5 {
+.ss-button-variation-5 {
   background-color: #7cbf42;
   border-color: #7cbf42;
   color: white; }
 
-.button5:hover {
+.ss-button-variation-5:hover {
   background-color: rgba(255, 255, 255, 0);
   border-color: #7cbf42;
   color: #7cbf42; }
 
-.button6 {
+.ss-button-variation-6 {
   background-color: rgba(255, 255, 255, 0);
   border-color: #7cbf42;
   color: #7cbf42; }
 
-.button6:hover {
+.ss-button-variation-6:hover {
   background-color: #7cbf42;
   border-color: #7cbf42;
   color: white; }
 
 /******  red buttons ******/
-.button7 {
+.ss-button-variation-7 {
   background-color: rgba(255, 255, 255, 0);
   border-color: #e2413e;
   /* #e2413e */
   color: #e2413e; }
 
-.button7:hover {
+.ss-button-variation-7:hover {
   border: 3px solid rgba(226, 65, 62, 0.8);
   color: rgba(226, 65, 62, 0.8); }
 
-.button8 {
+.ss-button-variation-8 {
   background-color: #e2413e;
   border-color: #e2413e;
   color: white; }
 
-.button8:hover {
+.ss-button-variation-8:hover {
   background-color: rgba(255, 255, 255, 0);
   border-color: #e2413e;
   color: #e2413e; }
 
-.button9 {
+.ss-button-variation-9 {
   background-color: rgba(255, 255, 255, 0);
   border-color: #e2413e;
   color: #e2413e; }
 
-.button9:hover {
+.ss-button-variation-9:hover {
   background-color: #e2413e;
   border-color: #e2413e;
   color: white; }
 
 /******  grey buttons ******/
-.button10 {
+.ss-button-variation-10 {
   background-color: rgba(255, 255, 255, 0);
   border-color: #95a5a6;
   /* #95a5a6 */
   color: #95a5a6; }
 
-.button10:hover {
+.ss-button-variation-10:hover {
   border: 3px solid rgba(149, 165, 166, 0.8);
   color: rgba(149, 165, 166, 0.8); }
 
-.button11 {
+.ss-button-variation-11 {
   background-color: #95a5a6;
   border-color: #95a5a6;
   color: white; }
 
-.button11:hover {
+.ss-button-variation-11:hover {
   background-color: rgba(255, 255, 255, 0);
   border-color: #95a5a6;
   color: #95a5a6; }
 
-.button12 {
+.ss-button-variation-12 {
   background-color: rgba(255, 255, 255, 0);
   border-color: #95a5a6;
   color: #95a5a6; }
 
-.button12:hover {
+.ss-button-variation-12:hover {
   background-color: #95a5a6;
   border-color: #95a5a6;
   color: white; }
@@ -3680,6 +3680,9 @@ h2 {
     padding: 0px 20px 10px 40px;
     z-index: 20;
     background: #FAFBFB; }
+    .ss-component-introduction .ss-component-introduction-copy-holder .ss-button-variation-1 {
+      margin-top: 20px;
+      margin-bottom: 20px; }
   .ss-component-introduction .angle {
     background: #FAFBFB;
     position: absolute;
