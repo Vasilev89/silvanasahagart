@@ -3583,6 +3583,14 @@ h2 {
       flex-direction: row; } }
   .ss-component-arwtworks-paintings li {
     text-align: center; }
+  .ss-component-arwtworks-paintings figure {
+    margin: 0px; }
+    @media only screen and (min-width: 832px) {
+      .ss-component-arwtworks-paintings figure {
+        margin-right: 20px; } }
+    .ss-component-arwtworks-paintings figure img {
+      display: block;
+      margin: auto; }
   .ss-component-arwtworks-paintings .ss-component-arwtworks-paintings-caption {
     text-align: center; }
     @media only screen and (min-width: 1024px) {

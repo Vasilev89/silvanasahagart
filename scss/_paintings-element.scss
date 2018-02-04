@@ -13,6 +13,17 @@
 	li{
 		text-align:center;
 	}	
+figure{
+margin:0px;
+	@include mq(tablet){
+	margin-right:20px;
+	}
+
+	img{
+	display:block;
+	margin:auto;	
+	}
+}
 
 .ss-component-arwtworks-paintings-caption{
 	text-align:center;
