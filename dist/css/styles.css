@@ -3106,7 +3106,7 @@
   margin: auto; }
 
 .ss-container-format, .ss-section-sign-up-disclaimer p, .ss-form-disclaimer {
-  max-width: 980px;
+  max-width: 1024px;
   margin: auto; }
 
 /****** buttons' style starts here ******/
@@ -3538,7 +3538,7 @@ h2 {
       -moz-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row;
-      max-width: 980px;
+      max-width: 1024px;
       margin: auto; } }
   .ss-component-footer .ss-component-footer-reserved-rights {
     text-align: right; }
@@ -3562,7 +3562,8 @@ h2 {
     align-self: center; }
 
 .ss-component-artworks {
-  position: relative; }
+  position: relative;
+  margin-bottom: 20px; }
 
 .ss-component-arwtworks-paintings {
   -js-display: flex;
@@ -3574,7 +3575,8 @@ h2 {
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 20px; }
   @media only screen and (min-width: 832px) {
     .ss-component-arwtworks-paintings {
       -webkit-flex-direction: row;
@@ -3590,7 +3592,8 @@ h2 {
         margin-right: 20px; } }
     .ss-component-arwtworks-paintings figure img {
       display: block;
-      margin: auto; }
+      margin: auto;
+      max-height: 400px; }
   .ss-component-arwtworks-paintings .ss-component-arwtworks-paintings-caption {
     text-align: center; }
     @media only screen and (min-width: 1024px) {
@@ -3601,7 +3604,7 @@ h2 {
   background: #FAFBFB; }
 
 .ss-form {
-  max-width: 980px;
+  max-width: 1024px;
   margin: auto;
   padding: 20px;
   -js-display: flex;
@@ -3702,6 +3705,47 @@ h2 {
     -webkit-transform: rotate(6deg);
     -ms-transform: rotate(6deg);
     transform: rotate(6deg); }
+
+.ss-navigation-component ul {
+  height: 100%;
+  -js-display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  @media only screen and (min-width: 832px) {
+    .ss-navigation-component ul {
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .ss-navigation-component ul li {
+        display: inline-block;
+        vertical-align: middle; }
+        .ss-navigation-component ul li a {
+          padding: 9px 0 2px;
+          text-decoration: none;
+          color: #434343;
+          margin: 0;
+          cursor: pointer;
+          font-size: 16px;
+          font-size: 1rem;
+          font-weight: normal;
+          border-bottom: 1px solid transparent;
+          -webkit-transition: color 200ms ease-in-out;
+          transition: color 200ms ease-in-out; }
+          .ss-navigation-component ul li a:hover {
+            color: darkgray;
+            -webkit-transition: color 200ms ease-in-out;
+            text-decoration: 5px solid underline #767676;
+            transition: color 200ms ease-in-out; } }
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*
@@ -4397,4 +4441,4 @@ img {
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 980px; }
+  max-width: 1024px; }

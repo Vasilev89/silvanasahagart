@@ -1,11 +1,13 @@
 .ss-component-artworks{
 	position: relative;
+	margin-bottom: 20px;
 }
 
 .ss-component-arwtworks-paintings{
 -js-display: flex;
 @include flexbox();
 @include flex-direction(column);
+margin-bottom: 20px;
 	@include mq(tablet){
 		@include flex-direction(row);
 	}
@@ -22,6 +24,7 @@ margin:0px;
 	img{
 	display:block;
 	margin:auto;	
+	max-height:400px;
 	}
 }
 
