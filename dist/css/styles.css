@@ -3411,8 +3411,7 @@ h2 {
   -ms-align-self: center;
   align-self: center;
   text-align: center;
-  padding-left: 0px;
-  margin-top: 40px; }
+  padding-left: 0px; }
   @media only screen and (min-width: 480px) {
     .ss-social-icons {
       float: right;
@@ -3725,6 +3724,7 @@ h2 {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-top: 30px;
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -3734,15 +3734,20 @@ h2 {
   -ms-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: space-between; }
-  @media only screen and (min-width: 832px) {
+  @media only screen and (min-width: 560px) {
     .ss-navigation-component ul {
+      margin-top: 0px;
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row; } }
   .ss-navigation-component ul li {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    margin-bottom: 30px; }
+    @media only screen and (min-width: 560px) {
+      .ss-navigation-component ul li {
+        margin-bottom: 0px; } }
     .ss-navigation-component ul li a {
       padding: 9px 0 2px;
       text-decoration: none;

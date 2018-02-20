@@ -2,7 +2,6 @@
     @include align-self(center);
 	text-align:center;
 	padding-left:0px;
-    margin-top: $unrelated-spacing;
     @include mq(mobile){
         float:right;
         margin-top: 20px;
