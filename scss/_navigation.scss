@@ -4,15 +4,14 @@
 	-js-display: flex;
 	@include flexbox();
 	@include flex-direction(column);
-	align-items:center;
-justify-content:space-between;
 	@include mq(tablet){
 		@include flex-direction(row);
-
+	}
+	@include align-items(center);
+	@include justify-content(space-between);
 		li{
 			display:inline-block;
 			vertical-align:middle;
-
 			a{
 			 padding: 9px 0 2px;
 			 text-decoration:none;
@@ -22,8 +21,7 @@ justify-content:space-between;
 		    @include font-size(16);
 		    border-bottom: 1px solid transparent;
 		    -webkit-transition: color 200ms ease-in-out;
-		    transition: color 200ms ease-in-out;
-					
+		    transition: color 200ms ease-in-out;			
 				&:hover{
 					color: lighten(#434343, 40%);
 					-webkit-transition: color 200ms ease-in-out;
@@ -33,6 +31,5 @@ justify-content:space-between;
 
 			}
 		}
-	}
 	}
 }

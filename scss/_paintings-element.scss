@@ -8,7 +8,7 @@
 @include flexbox();
 @include flex-direction(column);
 margin-bottom: 20px;
-	@include mq(tablet){
+	@include mq(mobile-large){
 		@include flex-direction(row);
 	}
 	
@@ -16,9 +16,11 @@ margin-bottom: 20px;
 		text-align:center;
 	}	
 figure{
-margin:0px;
-	@include mq(tablet){
+	margin:0px;
+	margin-bottom:$related-spacing;
+	@include mq(mobile-large){
 	margin-right:20px;
+	margin-bottom:0px;
 	}
 
 	img{

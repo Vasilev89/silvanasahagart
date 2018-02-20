@@ -15,25 +15,26 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="dist/css/styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
     </head>
     <body>
         <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
         <section class="container-fluid">
-            <header class="ss-component-header clearfix">
+            <header class="ss-component-header ">
 
                 <h1 class="ss-logo col-12 sm-col-4">Silvana Sahag</h1>
 
                 <nav class="ss-navigation-component sm-col-4" itemProp='Website Navigation'>
                     <ul>
-                        <li><a href="">Shop</a></li>
+                        <li class="ss-navigation-component-current"><a href="">Shop</a></li>
                         <li><a href="">About The Artist</a></li>
                         <li><a href="">Exhibitions</a></li>
                     </ul>
                 </nav>
-                <ul class="ss-social-icons col-12 sm-col-4 clearfix">
+                <ul class="ss-social-icons col-12 sm-col-4 ">
                     <li id="social_link" class="social_links_item">
                         <a class="external" href="http://www.facebook.com" target="_blank"><i class="social_media_icon facebook"></i></a>
                     </li>
@@ -52,7 +53,8 @@
                 <h2 class="ss-component-introduction-title">About</h2>
                 <p class="ss-hero ss-light-copy col-12">Silvana is an England based painter and fine artist. Her work explores the relationships between people, objects and emotions. Her art aims to provoke thought, emotion and question everything.
                 </p>
-                <button id="btn" class="ss-button-primary ss-init-gallery ss-button-variation-10 ss-center-item" href="#">Find Out More</button>
+                 <a class="ss-standard-cta-link" href="#">Find Out More <i class="fas fa-angle-right"></i>
+                 </a>
             </section>
         </section>
         <section class="ss-component ss-component-artworks clearfix">
@@ -64,10 +66,9 @@
                     </a>
                 </figure>
                 <figure class="col-12 md-col-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                    <a class="ss-component-gallery-item" href="images/Painting2_Large.jpg" data-caption="ddsaadsads" data-size="1125x2001" itemprop="contentUrl">
+                    <a class="ss-component-gallery-item" href="images/Painting2_Large.jpg" data-caption="dsadads" data-size="1100x1491" itemprop="contentUrl">
                         <img class="ss-component-arwtworks-paintings-painting lazyload" data-src="images/Painting2.jpg" itemprop="thumbnail" alt="Image description">
                     </a>
-
                 </figure>
             </li>
             <figure class="col-12 md-col-4" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -77,7 +78,7 @@
             </figure>
         </section>
         <section class="ss-component-arwtworks-cta">
-            <button type="submit" class="ss-button-primary ss-init-gallery ss-button-variation-10">View All Art</button>
+            <a class="ss-standard-cta-link ss-copy-align-center" href="#">View All Art <i class="fas fa-plus"></i></a>
         </section>
     </section>
 </section>
@@ -90,7 +91,7 @@
         </aside>
         <form class="ss-form" action="POST">
             <input required type="email" class="form-control ss-form-email md-col-8" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
-            <button type="submit" class="ss-button-primary ss-button-variation-3">Sign Up Now</button>
+            <a class="ss-standard-cta-link ss-copy-align-center" href="#">Sign Up Now<i class="fas fa-plus"></i></a>
         </form>
         <small id="emailHelp" class="form-text text-muted ss-form-disclaimer">We'll never share your email with anyone else. That's a promise.</small>
     </section>
