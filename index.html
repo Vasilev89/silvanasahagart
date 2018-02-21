@@ -25,16 +25,31 @@
         <section class="container-fluid">
             <header class="ss-component-header ">
 
-                <h1 class="ss-logo col-12 sm-col-4">Silvana Sahag</h1>
+                <h1 class="ss-logo col-12 md-col-4">Silvana Sahag
+                    <menu class="hamburger hamburger--steps ss-mobile-navigation">
+                        <i class="hamburger__line"></i>
+                        <i class="hamburger__line"></i>
+                        <i class="hamburger__line"></i>
+                    </menu>
+                </h1>
 
-                <nav class="ss-navigation-component sm-col-4" itemProp='Website Navigation'>
+                <nav class="nav-fullscreen ss-mobile-navigation ss-mobile-navigation-full-screen">
+                    <ul class="nav-fullscreen__items">
+                            <li class="nav-fullscreen__item"><a href="#">Shop</a></li>
+                            <li class="nav-fullscreen__item"><a href="#">About The Artist</a></li>
+                            <li class="nav-fullscreen__item"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+
+
+                <nav class="ss-navigation-component md-col-4 ss-desktop-navigation" itemProp='Website Navigation'>
                     <ul>
                         <li class="ss-navigation-component-current"><a href="">Shop</a></li>
                         <li><a href="">About The Artist</a></li>
-                        <li><a href="">Exhibitions</a></li>
+                        <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
-                <ul class="ss-social-icons col-12 sm-col-4 ">
+                <ul class="ss-social-icons col-12 md-col-4 ">
                     <li id="social_link" class="social_links_item">
                         <a class="external" href="http://www.facebook.com" target="_blank"><i class="social_media_icon facebook"></i></a>
                     </li>
@@ -49,7 +64,7 @@
             <section class="ss-component ss-component-introduction">
             <figure class="col-12 lg-col-7"></figure>
             <section class="ss-component-introduction-copy-holder col-12 lg-col-6">
-                <div class="angle"></div>
+                <!--<div class="angle"></div>-->
                 <h2 class="ss-component-introduction-title">About</h2>
                 <p class="ss-hero ss-light-copy col-12">Silvana is an England based painter and fine artist. Her work explores the relationships between people, objects and emotions. Her art aims to provoke thought, emotion and question everything.
                 </p>

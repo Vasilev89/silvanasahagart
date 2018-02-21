@@ -1,4 +1,8 @@
 .ss-social-icons{
+    display: none;
+    @include mq(tablet){
+        display: block;
+    }
     @include align-self(center);
 	text-align:center;
 	padding-left:0px;

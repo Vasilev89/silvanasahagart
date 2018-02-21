@@ -1,6 +1,5 @@
 body{
-	font-family: 'Raleway', sans-serif;
-
+font-family: 'Raleway', sans-serif;
 }
 
 .ss-light-copy{
@@ -31,6 +30,7 @@ text-align:right;
 }
 
 header{
+position: relative;
 -js-display: flex;
 @include flexbox();
 @include flex-direction(column);
@@ -38,18 +38,10 @@ header{
 		@include flex-direction(row);
 	}
 }
-
-h1, h2, h3{
+h1,h2, h3{
 font-weight:400;
 @extend .ss-copy-align-center;
 margin:0px;
-}
-
-
-.ss-logo{
-	@include mq(mobile){
-		text-align:left;
-	}	
 }
 
 h1{
@@ -65,6 +57,14 @@ h2{
 @include font-size(25);	
 color:$body-copy-default;
 margin-bottom: $related-spacing;
+}
+
+.ss-logo{
+text-align:left;
+margin-top: $related-spacing;
+@include mq(tablet){
+margin-top: 0px;	
+}
 }
 
 .ss-hero{
