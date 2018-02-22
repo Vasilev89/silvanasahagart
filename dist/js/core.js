@@ -243,6 +243,14 @@ initPhotoSwipeFromDOM('.ss-component-arwtworks-paintings');
 
 // vanilla JavaScript
 
+$(".menu-link").click(function(event) {
+    event.preventDefault();
+    $(".menu-overlay").toggleClass("open");
+    $(".menu").toggleClass("open");
+
+  });
+	
+
 $('.nav-toggle').on('click', function(){
     console.log('Hey there!');
     $('.ss-site-overlay').addClass('show');
