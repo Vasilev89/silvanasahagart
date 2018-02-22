@@ -240,4 +240,20 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.ss-component-arwtworks-paintings');
-})
+
+// vanilla JavaScript
+
+$('.nav-toggle').on('click', function(){
+    console.log('Hey there!');
+    $('.ss-site-overlay').addClass('show');
+    $('.ss-mobile-navigation-full-screen').addClass('show');
+    $(this).toggleClass('nav-toggle--open');
+    $(".nav-fullscreen").toggleClass("nav-fullscreen--open");
+});
+
+$('.ss-site-overlay').click(function(){
+    $(this).removeClass('show');
+    $('.ss-mobile-navigation-full-screen').removeClass('show');
+});
+
+});

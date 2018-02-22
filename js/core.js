@@ -242,24 +242,18 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 initPhotoSwipeFromDOM('.ss-component-arwtworks-paintings');
 
 // vanilla JavaScript
-document.addEventListener("DOMContentLoaded", function() {
 
-	document.querySelector('.hamburger').addEventListener("click", function() {
-		this.classList.toggle("hamburger--active");
-		document.querySelector(".nav-fullscreen").classList.toggle("nav-fullscreen--open");
-	});
-	
+$('.nav-toggle').on('click', function(){
+    console.log('Hey there!');
+    $('.ss-site-overlay').addClass('show');
+    $('.ss-mobile-navigation-full-screen').addClass('show');
+    $(this).toggleClass('nav-toggle--open');
+    $(".nav-fullscreen").toggleClass("nav-fullscreen--open");
 });
 
-// jQuery
-/*$(document).ready(function() {
-
-    $('.nav-toggle').on('click', function(){
-			$(this).toggleClass('nav-toggle--open');
-			$(".nav-fullscreen").toggleClass("nav-fullscreen--open");
-		});
+$('.ss-site-overlay').click(function(){
+    $(this).removeClass('show');
+    $('.ss-mobile-navigation-full-screen').removeClass('show');
+});
 
 });
-*/
-
-})
