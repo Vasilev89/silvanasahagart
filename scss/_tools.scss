@@ -2,6 +2,15 @@
 // FlexBox
 //============================================================
 
+$zindex: (
+  ground     : 5000, 
+  aboveground: 6000,
+  overlay    : 7000,
+  sky        : 8000,
+  cosmos     : 9000
+);
+
+
 .ss-center-item{
 display:block;
 margin:auto;
