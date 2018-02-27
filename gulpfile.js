@@ -57,3 +57,4 @@ gulp.task('watch', function() {
 
 // Default Task
 gulp.task('default', ['serve', 'export-fonts', 'sass', 'vendor', 'scripts', 'watch']);
+gulp.task('build', ['export-fonts', 'sass', 'vendor', 'scripts']);
