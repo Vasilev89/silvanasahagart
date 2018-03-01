@@ -25,22 +25,22 @@ margin-top: 10px;
 text-align:left;
 }
 
-.ss-copy-align-right{
+.ss-copy-align-right{ 
 text-align:right;
 }
 
 header{
-max-width: $container-max-width;
-padding-bottom:10px;
--js-display: flex;
-@include flexbox();
-position: fixed;
 margin:auto;
 background: #fff;
+max-width: $container-max-width;
+padding:0px 20px 10px 20px;
+-js-display: flex;
+@include flexbox();
+z-index: map-get($zindex, under-ground);
+position: fixed;
 top: 0;
 left: 0;
 right: 0;
-z-index: map-get($zindex, under-ground);
 @include flex-direction(column);
 	@include mq(mobile){
 		@include flex-direction(row);
