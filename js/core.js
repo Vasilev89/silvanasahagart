@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
 var openPhotoSwipe = function() {
     var pswpElement = document.querySelectorAll('.pswp')[0];
 
@@ -128,8 +127,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             nodeIndex++;
         }
 
-
-
         if(index >= 0) {
             // open PhotoSwipe if valid index found
             openPhotoSwipe( index, clickedGallery );
@@ -247,10 +244,8 @@ $(".menu-link").click(function(event) {
     event.preventDefault();
     $(".menu-overlay").toggleClass("open");
     $(".menu").toggleClass("open");
-
   });
 	
-
 $('.nav-toggle').on('click', function(){
     console.log('Hey there!');
     $('.ss-site-overlay').addClass('show');
@@ -263,5 +258,7 @@ $('.ss-site-overlay').click(function(){
     $(this).removeClass('show');
     $('.ss-mobile-navigation-full-screen').removeClass('show');
 });
+
+    $(".ss-component-header").headroom();
 
 });

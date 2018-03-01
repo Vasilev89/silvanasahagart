@@ -55,6 +55,11 @@ display: none;
 	}
 }
 
+
+.ss-mobile-navigation{
+	
+}
+
 .menu, .menu-link, .hamburger-icon, .hamburger-bar, menu.nav{
 position: absolute;
 }
@@ -156,7 +161,6 @@ position: absolute;
 	  height: 80%;
 	  top: 50%;
 	  @include transform(translateY(-50%));
-	  @include font-size(50px);
 	  font-weight: 400;
 	  text-align: center;
   }

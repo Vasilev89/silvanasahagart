@@ -3890,9 +3890,6 @@ menu.nav {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-size: 50pxpx;
-  font-size: 3.125pxrem;
-  font-weight: normal;
   font-weight: 400;
   text-align: center; }
 
