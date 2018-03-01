@@ -240,11 +240,8 @@ initPhotoSwipeFromDOM('.ss-component-arwtworks-paintings');
 
 $('#btnpopup').click(function(e){
     e.preventDefault();
-})
+});
 
-$('.ss-mobile-only-cta').click(function(e){
-    e.preventDefault();
-})
 
   // Defaults
   var BUTTON = document.getElementById('btnpopup');
