@@ -3785,9 +3785,11 @@ h2 {
           text-decoration: 5px solid underline #767676;
           transition: color 200ms ease-in-out; }
 
+.menu, .menu-link, .hamburger-icon, .hamburger-bar, menu.nav {
+  position: absolute; }
+
 .menu {
   display: block;
-  position: absolute;
   top: 20px;
   right: 20px;
   height: 46px;
@@ -3800,11 +3802,9 @@ h2 {
 .menu-link {
   width: 100%;
   height: 100%;
-  position: absolute;
-  z-index: 2; }
+  z-index: 5000; }
 
 .hamburger-icon {
-  position: absolute;
   width: 20px;
   height: 14px;
   margin: auto;
@@ -3818,7 +3818,6 @@ h2 {
   height: 2px;
   width: 100%;
   border-radius: 2px;
-  position: absolute;
   left: 0;
   transition: all 0.25s ease-in-out; }
 
@@ -3853,9 +3852,23 @@ h2 {
   z-index: 7000;
   opacity: 0;
   visibility: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
   justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
   align-items: center; }
 
 .menu-overlay.open {
@@ -3867,15 +3880,19 @@ h2 {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
 menu.nav {
-  position: absolute;
   height: 80%;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-size: 50px;
-  font-family: 'Vollkorn', serif;
+  font-size: 50pxpx;
+  font-size: 3.125pxrem;
+  font-weight: normal;
   font-weight: 400;
   text-align: center; }
 
