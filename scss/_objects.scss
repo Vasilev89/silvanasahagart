@@ -1,60 +1,12 @@
-//# Media Object
-//Usage
-
-/*
-.box{
- @include media-object(10px, left, 'table-cell'); 
+.Media {
+  display: flex;
+  align-items: flex-start;
 }
 
-<div class="box">
-  <img class="media" src="http://lorempixel.com/60/60/people" />
-  <div class="block">
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut vulputate quam. Sed lobortis tempus dui, quis dapibus purus consequat eu. Morbi ut egestas mi. 
-
-    <div class="box">
-      <img class="media" src="http://lorempixel.com/30/30/people" />
-        <div class="block">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </div>
-    </div>
-
-    <div class="box">
-      <img class="media" src="http://lorempixel.com/30/30/people" />
-        <div class="block">
-           Pellentesque ut vulputate quam. Sed lobortis tempus dui, quis dapibus purus consequat
-        </div>
-    </div>    
-
-  </div>
-</div>
- */
-
-.separator{
-height: 3px;
-background: #e4e4e4;
-z-index: 1;
-width: 20%;
-margin: auto;
+.Media-figure {
+  margin-right: 1em;
 }
 
-@mixin media-object($margin:10px, $position: left, $formating-context: 'overflow', $media: '.media', $block: '.block') {
-    @include pie-clearfix; // or extend a .clearfix class
-    #{unquote($block)} {
-        @if $formating-context == 'overflow' {
-            overflow:hidden;
-        } @else {
-            display:table-cell;
-            width:10000px;
-            *width:auto;
-            *zoom:1;
-        }
-    }
-    #{unquote($media)} {
-        float:$position;
-        img{display:block;}
-        @if $margin > 0 {
-            margin-#{opposite-position($position)}:$margin;
-        }
-    }
+.Media-body {
+  flex: 1;
 }
