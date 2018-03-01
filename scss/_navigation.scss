@@ -238,4 +238,16 @@ position: absolute;
 	box-shadow: inset 0 0 0 5px #000;
 	transition: .3s;
   }
+
+.headroom {
+    transition: transform .25s ease-in-out;
+    will-change: transform
+}
   
+.headroom--pinned {
+    transform: translateY(0)
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%)
+}

@@ -30,9 +30,17 @@ text-align:right;
 }
 
 header{
-position: relative;
+max-width: $container-max-width;
+padding-bottom:10px;
 -js-display: flex;
 @include flexbox();
+position: fixed;
+margin:auto;
+background: #fff;
+top: 0;
+left: 0;
+right: 0;
+z-index: map-get($zindex, under-ground);
 @include flex-direction(column);
 	@include mq(mobile){
 		@include flex-direction(row);
