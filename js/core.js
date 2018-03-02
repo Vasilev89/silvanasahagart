@@ -14,7 +14,19 @@ var openPhotoSwipe = function() {
             src: './/images/Painting2_Large.jpg',
             w: 1024,
             h: 683
-        }
+        },{
+            src: './/images/Painting3_Large.jpg',
+            w: 964,
+            h: 1024
+        },{
+            src: './/images/Painting4_Large.jpg',
+            w: 964,
+            h: 1024
+        },{
+            src: './/images/Painting5_Large.jpg',
+            w: 964,
+            h: 1024
+        },
     ];
     
     // define options (if needed)
@@ -238,13 +250,9 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM('.ss-component-arwtworks-paintings');
 
-$('#btnpopup').click(function(e){
-    e.preventDefault();
-});
-
 
   // Defaults
-  var BUTTON = document.getElementById('btnpopup');
+  var BUTTON = document.getElementsByClassName('ss-init-sign-up-form');
   var POPUP = document.getElementById('mypopup');
   var POPUP_CLASS = 'popup-ui';
   

@@ -24,10 +24,10 @@
         <![endif]-->
         <section class="container-fluid">
             <header class="ss-component-header header--fixed headroom">
-                <h1 class="ss-logo col-12 md-col-4">Silvana Sahag</h1>
+                <h1 class="ss-logo col-12 md-col-4"><a href="index.html">Silvana Sahag</a></h1> 
                 <nav class="ss-navigation-component md-col-4 ss-desktop-navigation" itemProp='Website Navigation'>
                     <ul>
-                        <li class="ss-navigation-component-current"><a id="btnpopup" href="#">Shop</a></li>
+                        <li class="ss-navigation-component-current ss-init-sign-up-form"><a id="btnpopup" href="#">Shop</a></li>
                         <li><a href="about.html">About The Artist</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
@@ -70,9 +70,9 @@
                 <h2 class="ss-component-introduction-title">Silvana is a painter.</h2>
                 <p class="ss-hero ss-light-copy col-12">Her work explores the relationships between people, objects and emotions. Her art aims to provoke thought and question everything.
                 </p>
-                <a class="ss-standard-cta-link" href="#">Find Out More <i class="fas fa-angle-right"></i>
-                    <a class="ss-standard-cta-link ss-mobile-only-cta" id="btnpopup" href="#">Buy Silvana's Art<i class="fas fa-angle-right"></i>
-                    </a>
+                <a class="ss-standard-cta-link" href="about.html">Find Out More <i class="fas fa-angle-right"></i></a>
+                <span class="ss-cta-separator">or</span>
+                <a class="ss-standard-cta-link ss-primary-cta-link ss-mobile-only-cta ss-init-sign-up-form" href="#">Buy Silvana's Art</a>
                 </section>
             </section>
             <section class="ss-component ss-component-artworks clearfix">
@@ -98,17 +98,14 @@
                     <div class="ss-component-gallery-item-sales-card"></div>
                 </figure>
             </section>
-            <section class="ss-component-arwtworks-cta">
-                <a class="ss-standard-cta-link ss-copy-align-center" href="#">View All Art <i class="fas fa-plus"></i></a>
-            </section>
-            <section class="ss-component-arwtworks-cta">
-                <a class="ss-standard-cta-link ss-copy-align-center" href="#">Shop<i class="fas fa-plus"></i></a>
-            </section>
+                <ul class="ss-standard-cta-link-container">
+                    <li><a class="ss-standard-cta-link ss-primary-cta-link ss-init-gallery ss-copy-align-center ss-standard-cta-link__centered-variant" href="#">View All Art <i class="far fa-images"></i></a></li>
+                </ul>
         </section>
     </section>
     <section class="ss-component ss-section-sign-up">
         
-        <h2 class="ss-component-update-form-heading">Sign Up For Updates</h2>
+        <h2 class="ss-component-update-form-heading">Get Notified When Silvana Launches Her Shop</h2>
         <section class="ss-component-update-form clearfix">
             <aside class="ss-section-sign-up-disclaimer">
                 <p class="ss-light-copy ss-body-style">Silvana is currently re-building and improving her website. If you would like to stay up-to-date with us and get notified of any up-and-coming exhibitions then, please - sign up.</p>
@@ -191,18 +188,20 @@
         </div>
     </div>
     <div id="mypopup" class="popup-ui">
-  <div class="popup-ui-wrapper">
+<div class="popup-ui-wrapper">
     <div class="popup-ui-content">
-
       <div class="my-content">
-
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
+        <h2>Get Notified When Silvana Launches Her Shop</h2>
         <p>
-          In enim lacus, pellentesque a viverra scelerisque, dapibus sit amet ipsum. Donec pharetra mauris in turpis placerat pellentesque. Integer vitae tellus mauris. Sed lobortis varius erat, sed ullamcorper tellus hendrerit a.
+          If you would like to be notified when we launch our shop, then please fill out your details below and you will receive an email when we open up.
         </p>
         <form action="POST" name='Sign Up User'>
-          <input type="text">
+          <input type="text" placeholder="Please Enter Your Email Address" required="email">
         </form>
+        <div class="ss-standard-cta-link-container">
+            <button class="ss-standard-cta-link" type="submit">Sign Me Up</button>
+        </div>
+        <small>We will never share your email with anyone else. That's a promise.</small>
       </div>
     </div>
   </div>
