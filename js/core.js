@@ -250,24 +250,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM('.ss-component-arwtworks-paintings');
 
-
-  // Defaults
-  var BUTTON = document.getElementsByClassName('ss-init-sign-up-form');
-  var POPUP = document.getElementById('mypopup');
-  var POPUP_CLASS = 'popup-ui';
-  
-  // Popup button (Click on button to open modal)
-  BUTTON.addEventListener('click', function(){
-    POPUP.className = POPUP_CLASS + ' show';
-  }, false);
-
-  // Popup modal (Click on modal to close it)
-  POPUP.addEventListener('click', function(){
-    this.className = POPUP_CLASS;
-  }, false);
-
-// vanilla JavaScript
-
 $(".menu-link").click(function(event) {
     event.preventDefault();
     $(".menu-overlay").toggleClass("open");
@@ -275,7 +257,6 @@ $(".menu-link").click(function(event) {
   });
 	
 $('.nav-toggle').on('click', function(){
-    console.log('Hey there!');
     $('.ss-site-overlay').addClass('show');
     $('.ss-mobile-navigation-full-screen').addClass('show');
     $(this).toggleClass('nav-toggle--open');
@@ -287,6 +268,6 @@ $('.ss-site-overlay').click(function(){
     $('.ss-mobile-navigation-full-screen').removeClass('show');
 });
 
-    $(".ss-component-header").headroom();
+$(".ss-component-header").headroom();
 
 });
