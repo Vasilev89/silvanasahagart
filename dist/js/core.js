@@ -242,7 +242,6 @@ $('#btnpopup').click(function(e){
     e.preventDefault();
 });
 
-
   // Defaults
   var BUTTON = document.getElementById('btnpopup');
 
@@ -250,6 +249,8 @@ $('#btnpopup').click(function(e){
   // Defaults
   var BUTTON = document.getElementsByClassName('ss-init-sign-up-form');
 
+  // Defaults
+  var BUTTON = document.getElementById('btnpopup');
   var POPUP = document.getElementById('mypopup');
   var POPUP_CLASS = 'popup-ui';
   
