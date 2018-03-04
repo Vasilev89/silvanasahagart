@@ -14,7 +14,19 @@ var openPhotoSwipe = function() {
             src: './/images/Painting2_Large.jpg',
             w: 1024,
             h: 683
-        }
+        },{
+            src: './/images/Painting3_Large.jpg',
+            w: 964,
+            h: 1024
+        },{
+            src: './/images/Painting4_Large.jpg',
+            w: 964,
+            h: 1024
+        },{
+            src: './/images/Painting5_Large.jpg',
+            w: 964,
+            h: 1024
+        },
     ];
     
     // define options (if needed)
@@ -238,28 +250,6 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM('.ss-component-arwtworks-paintings');
 
-$('#btnpopup').click(function(e){
-    e.preventDefault();
-});
-
-
-  // Defaults
-  var BUTTON = document.getElementById('btnpopup');
-  var POPUP = document.getElementById('mypopup');
-  var POPUP_CLASS = 'popup-ui';
-  
-  // Popup button (Click on button to open modal)
-  BUTTON.addEventListener('click', function(){
-    POPUP.className = POPUP_CLASS + ' show';
-  }, false);
-
-  // Popup modal (Click on modal to close it)
-  POPUP.addEventListener('click', function(){
-    this.className = POPUP_CLASS;
-  }, false);
-
-// vanilla JavaScript
-
 $(".menu-link").click(function(event) {
     event.preventDefault();
     $(".menu-overlay").toggleClass("open");
@@ -267,7 +257,6 @@ $(".menu-link").click(function(event) {
   });
 	
 $('.nav-toggle').on('click', function(){
-    console.log('Hey there!');
     $('.ss-site-overlay').addClass('show');
     $('.ss-mobile-navigation-full-screen').addClass('show');
     $(this).toggleClass('nav-toggle--open');
@@ -279,6 +268,6 @@ $('.ss-site-overlay').click(function(){
     $('.ss-mobile-navigation-full-screen').removeClass('show');
 });
 
-    $(".ss-component-header").headroom();
+$(".ss-component-header").headroom();
 
 });

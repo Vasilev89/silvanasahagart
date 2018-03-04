@@ -2,6 +2,27 @@ body{
 font-family: 'Raleway', sans-serif;
 }
 
+button{
+border:none;
+}
+
+.ss-standard-cta-link-container{
+display:block;
+max-width:250px;
+margin:auto;
+}
+
+.ss-primary-cta-link{
+padding:15px;
+border:1px solid #333;
+}
+
+
+a{
+color:inherit;
+text-decoration:none;
+}
+
 .ss-light-copy{
 font-weight:300;
 }
@@ -16,9 +37,25 @@ line-height:30px;
 text-align:center;
 }
 .ss-standard-cta-link{
+i{
+margin-left:5px;	
+}
+max-width:150px;
 display: block;
+margin:auto;
 color:#1f1f1f;
 margin-top: 10px;
+	@include mq(tablet){
+		display:inline-block;
+	}
+
+	&__centered-variant{
+	display:block;	
+	}
+}
+
+.ss-cta-separator{
+margin:0px 10px 0px 10px;
 }
 
 .ss-copy-align-left{
