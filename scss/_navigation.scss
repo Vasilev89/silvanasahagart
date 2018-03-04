@@ -65,14 +65,6 @@ position: absolute;
 	}
   }
   
-
-.ss-mobile-navigation{
-
-}
-
-
-
-
  .menu-link{
 	height: 46px;
 	width: 46px;
@@ -145,28 +137,6 @@ position: absolute;
 	@include flex-direction(column);
 	@include justify-content(center);
 	@include align-items(center);
-  
-	  li {
-		display: block;
-		padding:5px;
-		position: relative;
-		opacity: 1;
-		margin: 5px;
-  }
-  
-  a {
-		display: block;
-		position: relative;
-		color: #ffffff;
-		text-decoration: none;
-		overflow: hidden;
-  }
-  
-  a.nav-links:hover {
-	background-color:#ffffff;
-	color: #000000;
-	transition: 0.6s;
-  }
   }
   
   .menu-overlay.open {
@@ -202,12 +172,49 @@ position: absolute;
 	width:87.563%;
   }
   
+  li {
+		display: block;
+		padding:5px;
+		position: relative;
+		opacity: 1;
+		margin: 5px;
+  }
+  
+  a {
+		display: block;
+		position: relative;
+		color: #ffffff;
+		text-decoration: none;
+		overflow: hidden;
+  }
+  
+  a.nav-links:hover {
+	background-color:#ffffff;
+	color: #000000;
+	transition: 0.6s;
+  }
   
   .display-inline {
 	  display: inline-block;
 	  margin: 0 10px 0 10px;
   }
   
+  input[type=text] {
+	  width: 130px;
+	  border: 2px solid #ffffff;
+	  border-radius: 130px;
+	  font-size: 16px;
+	  background-color: white;
+	  margin: 20px;
+	  padding: 12px 20px 12px 40px;
+	  -webkit-transition: width 0.4s ease-in-out;
+	  transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+	  width: 230px;
+	  outline: none;
+  }
   
   .social-round-icon {
 	width:45px;
@@ -233,7 +240,7 @@ position: absolute;
 }
   
 .headroom--pinned {
-    transform: translateY(0);
+    transform: translateY(0)
 }
 
 .headroom--unpinned {
