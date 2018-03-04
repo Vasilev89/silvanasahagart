@@ -27,7 +27,7 @@
                 <h1 class="ss-logo col-12 md-col-4"><a href="index.html">Silvana Sahag</a></h1> 
                 <nav class="ss-navigation-component md-col-4 ss-desktop-navigation" itemProp='Website Navigation'>
                     <ul>
-                        <li class="ss-navigation-component-current ss-init-sign-up-form"><a id="open-popup" href="#">Shop</a></li>
+                        <li class="ss-navigation-component-current ss-init-sign-up-form"><a class="open-popup" href="#">Shop</a></li>
                         <li><a href="about.html">About The Artist</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
@@ -189,19 +189,20 @@
     </div>
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 
-<script type="text/javascript">
-function showMailingPopUp() {
-    require(["mojo/signup-forms/Loader"], function(L) {
-        L.start({
-            "baseUrl": "mc.us17.list-manage.com",
-            "uuid": "854fb6542dc8e5dc4a4a1a30f",
-            "lid": "bc3216ec1f"
-        })
-})
-};
-document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-</script>
     <script src="dist/js/vendors.js"></script>
     <script src="dist/js/core.js"></script>
+
+<script type="text/javascript">
+    function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"obscured","uuid":"obscured","lid":"obscured"})})
+    document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";                  
+};
+
+    $(function() {
+        $(".open-popup").on('click', function() { 
+            showMailingPopUp();
+        });
+    });    
+</script>
 </body>
 </html>
