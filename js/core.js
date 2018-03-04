@@ -245,6 +245,11 @@ $('#btnpopup').click(function(e){
 
   // Defaults
   var BUTTON = document.getElementById('btnpopup');
+
+
+  // Defaults
+  var BUTTON = document.getElementsByClassName('ss-init-sign-up-form');
+
   var POPUP = document.getElementById('mypopup');
   var POPUP_CLASS = 'popup-ui';
   
