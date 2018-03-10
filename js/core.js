@@ -267,6 +267,6 @@ $('.ss-site-overlay').click(function(){
     $('.ss-mobile-navigation-full-screen').removeClass('show');
 });
 
-    $(".ss-component-header").headroom();
+    $(".ss-component-header, .ss-mobile-navigation-main").headroom();
 
 });

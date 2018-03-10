@@ -11,8 +11,8 @@ var browserSync = require('browser-sync').create();
 var babel = require("gulp-babel");
 
 gulp.task('export-fonts', function() {
-  return gulp.src('node_modules/font-awesome/fonts/*')
-    .pipe(gulp.dest('fonts'))
+  return gulp.src('node_modules/font-awesome/fonts/fontawesome-webfont.*')
+    .pipe(gulp.dest('dist/fonts'))
 });
 
 // Static Server + watching scss/html files
@@ -56,5 +56,5 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['serve', 'export-fonts', 'sass', 'vendor', 'scripts', 'watch']);
+gulp.task('default', ['export-fonts', 'sass', 'vendor', 'scripts', 'serve', 'watch']);
 gulp.task('build', ['export-fonts', 'sass', 'vendor', 'scripts']);
