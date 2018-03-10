@@ -3,12 +3,7 @@ $navFullscreen-line-height: $navFullscreen-font-size * 2;
 $navFullscreen-font-size-mobile: 2rem;
 $navFullscreen-line-height-mobile: $navFullscreen-font-size-mobile * 2;
 
-.ss-mobile-navigation{
-	display: block;
-	@include mq(tablet){
-		display: none;	
-	}
-}
+
 .ss-navigation-component{
 display: none;
 @include mq(tablet){
@@ -55,6 +50,19 @@ display: none;
 	}
 }
 
+.ss-mobile-navigation{
+	display: block;
+	@include mq(tablet){
+		display: none;	
+	}
+
+	a{
+		@include font-size(40);
+		text-align:center;
+		margin-bottom:20px;
+	}
+}
+
 .menu, .hamburger-icon, .hamburger-bar, menu.nav{
 position: absolute;
 }
@@ -71,7 +79,7 @@ position: absolute;
 	position: fixed;
 	top:30px;
 	right:25px;
-	z-index: map-get($zindex, ground);
+	z-index: map-get($zindex, cosmos);
   }
   
   .hamburger-icon {
@@ -168,9 +176,6 @@ position: absolute;
 	  margin: 25px;
   }
   
-  ul.one {
-	width:87.563%;
-  }
   
   li {
 		display: block;
@@ -185,7 +190,6 @@ position: absolute;
 		position: relative;
 		color: #ffffff;
 		text-decoration: none;
-		overflow: hidden;
   }
   
   a.nav-links:hover {
