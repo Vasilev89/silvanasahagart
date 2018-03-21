@@ -238,13 +238,21 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM('.ss-component-arwtworks-paintings');
 
-var jsOpenPopUp = $('#btnpopup');
+var jsOpenPopUp = $('.ss-init-signup');
 var jsPopUp = $("#mypopup");
 
 $(jsOpenPopUp).click(function(e){
     e.preventDefault();
-    jsPopUp.addClass('show');    
+    jsPopUp.toggleClass('show');    
 });
+
+$('.popup-ui').click(function(){
+   $(this).removeClass('show');
+})
+
+$('.menu-overlay').click(function(){
+     $(this).removeClass('open');
+})
 
 // vanilla JavaScript
 
@@ -255,7 +263,6 @@ $(".menu-link").click(function(event) {
   });
 	
 $('.nav-toggle').on('click', function(){
-    console.log('Hey there!');
     $('.ss-site-overlay').addClass('show');
     $('.ss-mobile-navigation-full-screen').addClass('show');
     $(this).toggleClass('nav-toggle--open');

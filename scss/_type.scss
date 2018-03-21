@@ -21,6 +21,11 @@ margin-top: 20px;
 		display:none;
 	}
 
+	&__alwayson{
+	display:block;
+	text-align:center;
+	}
+
 }
 
 .ss-button-maxedout {
@@ -34,6 +39,7 @@ color:#1f1f1f;
 margin-top: 10px;
 text-decoration:underline;
 align-self:center;
+@include font-size(18);
 @include mq(mobile){
 	text-align:left;
 }
@@ -70,11 +76,11 @@ text-align:right;
 }
 
 .ss-standard-separator-top{
-	margin-top: $unrelated-spacing;
+	margin-top: $related-spacing - 10px;
 }
 
 .ss-standard-separator-bottom{
-margin-bottom: $unrelated-spacing;	
+margin-bottom: $related-spacing - 10px;	
 }
 
 header{

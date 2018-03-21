@@ -23,22 +23,13 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
         <section class="container-fluid">
-            <menu class="menu ss-mobile-navigation">
-                <a href="#" class="menu-link">
-                    <span class="hamburger-icon">
-                        <span class="hamburger-bar hamburger-bar-1"></span>
-                        <span class="hamburger-bar hamburger-bar-2"></span>
-                        <span class="hamburger-bar hamburger-bar-3"></span>
-                    </span>
-                </a>
-            </menu>
             <header class="ss-component-header header--fixed headroom">
                 <h1 class="ss-logo col-12 md-col-4">Silvana Sahag</h1>
                 <nav class="ss-navigation-component md-col-4 ss-desktop-navigation" itemProp='Website Navigation'>
                     <ul>
-                        <li class="ss-navigation-component-current ss-init-sign-up-form"><a id="btnpopup" href="#">Shop</a></li>
+                        <li class="ss-navigation-component-current ss-init-sign-up-form"><a class="ss-init-signup" href="#">Shop</a></li>
                         <li><a href="about.html">About The Artist</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="enquires@silvanasahagart.com">Contact</a></li>
                     </ul>
                 </nav>
                 <ul class="ss-social-icons col-12 md-col-4 ">
@@ -52,6 +43,13 @@
                         <a href= class="external" href="http://www.google.com" target="_blank"><i class="social_media_icon envelope"></i></a>
                     </li>
                 </ul>
+                <menu class="menu ss-mobile-navigation">
+                <a href="#" class="ss-mobile-navigation-menu-link">
+                    <span>
+                        Menu
+                    </span>
+                </a>
+            	</menu>
             </header>
                 <div class="menu-overlay ss-mobile-navigation">
                     <nav class="overlay-menu">
@@ -72,7 +70,7 @@
                 </p>
                 <a class="ss-standard-cta-link" href="about.html">Find Out More</a>
                 <span class="ss-standard-separator">or</span>
-                <a class="ss-standard-cta-link ss-standard-cta-link__primary-cta" id="btnpopup" href="#">Buy Silvana's Art</a>
+                <a class="ss-standard-cta-link ss-standard-cta-link__primary-cta ss-init-signup" href="#">Buy Silvana's Art</a>
                 </section>
             </section>
             <section class="ss-component ss-component-artworks clearfix">
@@ -99,8 +97,9 @@
                 </figure>
             </section>
             <section class="ss-component-arwtworks-cta">
-                <a class="ss-standard-cta-link ss-copy-align-center ss-standard-separator-bottom ss-standard-separator-top" href="#">View All Art <i class="fas fa-plus"></i></a>
-                <a class="ss-standard-cta-link ss-standard-cta-link__primary-cta ss-standard-cta-link__primary-cta-promotion ss-button-maxedout ss-copy-align-center" href="#">Buy Silvana's Art<i class="fas fa-plus"></i></a>
+                <a class="ss-standard-cta-link ss-copy-align-center" href="#">View All Art <i class="fas fa-plus"></i></a>
+                <span class="ss-standard-separator__alwayson ss-standard-separator-bottom ss-standard-separator-top">or</span>
+                <a class="ss-standard-cta-link ss-init-signup ss-standard-cta-link__primary-cta ss-standard-cta-link__primary-cta-promotion ss-button-maxedout ss-copy-align-center" href="#">Buy Silvana's Art<i class="fas fa-plus"></i></a>
             </section>
         </section>
     </section>
@@ -188,21 +187,24 @@
             </div>
         </div>
     </div>
-    <div id="mypopup" class="popup-ui">
+<div id="mypopup" class="popup-ui">
   <div class="popup-ui-wrapper">
     <div class="popup-ui-content">
-      <div class="my-content">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing.</h3>
-        <p>
-          In enim lacus, pellentesque a viverra scelerisque, dapibus sit amet ipsum. Donec pharetra mauris in turpis placerat pellentesque. Integer vitae tellus mauris. Sed lobortis varius erat, sed ullamcorper tellus hendrerit a.
-        </p>
-        <form action="https://silvanasahagart.us17.list-manage.com/subscribe/post" method="POST" name='Sign Up User'>
-            <input type="hidden" name="u" value="854fb6542dc8e5dc4a4a1a30f">
-            <input type="hidden" name="id" value="bc3216ec1f">
-            <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Please Enter Your Email Address" value="">
-            <button type="submit">Submit The Form</button>
-        </form>
-</div>
+        <figure class="popup-figure">
+            <img src="images/popup_image.jpg" alt="This is the Image">
+        </figure>
+          <div class="my-content">
+            <h3>SIGN UP</h3>
+            <p>
+              Silvana is currently re-building and improving her website. If you would like to stay up-to-date with us and get notified of any up-and-coming exhibitions then, please - sign up.
+            </p>
+            <form class="ss-form" action="https://silvanasahagart.us17.list-manage.com/subscribe/post" method="POST" name='Sign Up User'>
+                <input type="hidden" name="u" value="854fb6542dc8e5dc4a4a1a30f">
+                <input type="hidden" name="id" value="bc3216ec1f">
+                <input class="form-control ss-form-email" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Please Enter Your Email Address" value="">
+                <button class="ss-standard-cta-link ss-standard-cta-link__primary-cta ss-standard-cta-link__primary-cta-promotion" type="submit">Sign Up</button>
+            </form>
+        </div>
     <script src="dist/js/vendors.js"></script>
     <script src="dist/js/core.js"></script>
 </body>
