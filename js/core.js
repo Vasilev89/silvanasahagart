@@ -255,7 +255,6 @@ $('.menu-overlay').click(function(){
 })
 
 // vanilla JavaScript
-
 $(".menu-link").click(function(event) {
     event.preventDefault();
     $(".menu-overlay").toggleClass("open");
@@ -263,14 +262,14 @@ $(".menu-link").click(function(event) {
   });
 	
 $('.nav-toggle').on('click', function(){
-    $('.ss-site-overlay').addClass('show');
+    $('.menu-overlay').addClass('open');
     $('.ss-mobile-navigation-full-screen').addClass('show');
     $(this).toggleClass('nav-toggle--open');
     $(".nav-fullscreen").toggleClass("nav-fullscreen--open");
 });
 
 $('.ss-site-overlay').click(function(){
-    $(this).removeClass('show');
+    $(this).removeClass('open');
     $('.ss-mobile-navigation-full-screen').removeClass('show');
 });
 
