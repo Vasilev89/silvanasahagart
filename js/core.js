@@ -14,6 +14,33 @@ var openPhotoSwipe = function() {
             src: './/images/Painting2_Large.jpg',
             w: 1024,
             h: 683
+        },
+
+        {
+            src: './/images/Painting3_Large.jpg',
+            w: 1024,
+            h: 683
+        },
+
+
+        {
+            src: './/images/Painting4_Large.jpg',
+            w: 1024,
+            h: 683
+        },
+
+
+        {
+            src: './/images/Painting5_Large.jpg',
+            w: 1024,
+            h: 683
+        },
+
+
+        {
+            src: './/images/Painting6_Large.jpg',
+            w: 1024,
+            h: 683
         }
     ];
     
@@ -244,13 +271,14 @@ var jsWrapper = $('.ss-popup-ui-content');
 
 $(jsOpenPopUp).click(function(e){
     e.preventDefault();
-    jsUiWrapper.toggleClass('bring-in-overlay');
+    jsUiWrapper.addClass('bring-in-overlay');
     jsPopUp.toggleClass('show');
     jsWrapper.toggleClass('show');    
 });
 
 $('.ss-popup-ui').click(function(){
    $(this).removeClass('show');
+   jsUiWrapper.removeClass('bring-in-overlay');
    jsWrapper.removeClass('show');
 })
 

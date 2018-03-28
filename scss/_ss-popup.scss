@@ -81,7 +81,7 @@
  display:none;
     @include mq(desktop){
     display:block;
-    background-image: url('../images/popup_image.jpg');
+    background-image: url('https://via.placeholder.com/265x355');
     width:40%;
     background-size:cover;
   }

@@ -38,6 +38,19 @@ width: 20%;
 margin: auto;
 }
 
+.Media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Media-figure {
+  margin-right: 1em;
+}
+
+.Media-body {
+  flex: 1;
+}
+
 @mixin media-object($margin:10px, $position: left, $formating-context: 'overflow', $media: '.media', $block: '.block') {
     @include pie-clearfix; // or extend a .clearfix class
     #{unquote($block)} {
