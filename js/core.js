@@ -234,20 +234,24 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
     }
 };
-
 // execute above function
 initPhotoSwipeFromDOM('.ss-component-arwtworks-paintings');
 
 var jsOpenPopUp = $('.ss-init-signup');
-var jsPopUp = $("#mypopup");
+var jsPopUp = $(".ss-pop-up-trigger")
+var jsUiWrapper = $(".ss-popup-ui-wrapper");
+var jsWrapper = $('.ss-popup-ui-content');
 
 $(jsOpenPopUp).click(function(e){
     e.preventDefault();
-    jsPopUp.toggleClass('show');    
+    jsUiWrapper.toggleClass('bring-in-overlay');
+    jsPopUp.toggleClass('show');
+    jsWrapper.toggleClass('show');    
 });
 
-$('.popup-ui').click(function(){
+$('.ss-popup-ui').click(function(){
    $(this).removeClass('show');
+   jsWrapper.removeClass('show');
 })
 
 $('.menu-overlay').click(function(){
