@@ -1,5 +1,4 @@
 // POPUP U
-
 .ss-popup-ui {
   display:block;
   position: fixed;
@@ -26,14 +25,13 @@
   }
 }
 
-  .ss-popup-ui-wrapper {
+  .ss-popup-ui-wrapper{
     position: relative;
     display: inline-block;
     vertical-align: middle;
     margin: 0 auto;
     text-align: left;
-    position: absolute;
-    top:0px;
+    top:50%;
     width:90%;
     @include mq(tablet){
       max-width:700px;
@@ -69,6 +67,7 @@
   }
   .ss-popup-ui-wrapper.bring-in-overlay{
     z-index: map-get($zindex, cosmos);
+    position: absolute;
     max-height: calc(100% - 100px);
     position: fixed;
     top: 50%;

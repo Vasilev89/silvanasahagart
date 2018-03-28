@@ -29,7 +29,6 @@
   </div>
 </div>
  */
-
 .separator{
 height: 3px;
 background: #e4e4e4;
@@ -39,16 +38,17 @@ margin: auto;
 }
 
 .Media {
-  display: flex;
-  align-items: flex-start;
+  -js-display: flex;
+  @include flexbox();
+  @include align-items(flex-start)
+}
+
+.Media-body {
+  @include flex(1);
 }
 
 .Media-figure {
   margin-right: 1em;
-}
-
-.Media-body {
-  flex: 1;
 }
 
 @mixin media-object($margin:10px, $position: left, $formating-context: 'overflow', $media: '.media', $block: '.block') {

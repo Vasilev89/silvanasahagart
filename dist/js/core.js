@@ -269,6 +269,11 @@ var jsPopUp = $(".ss-pop-up-trigger")
 var jsUiWrapper = $(".ss-popup-ui-wrapper");
 var jsWrapper = $('.ss-popup-ui-content');
 
+$('.ss-mobile-navigation-menu-link').click(function(e){
+    e.preventDefault();
+})
+
+
 $(jsOpenPopUp).click(function(e){
     e.preventDefault();
     jsUiWrapper.addClass('bring-in-overlay');

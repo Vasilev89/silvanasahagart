@@ -960,14 +960,26 @@
   margin: auto; }
 
 .Media {
+  -js-display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
   align-items: flex-start; }
+
+.Media-body {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
 
 .Media-figure {
   margin-right: 1em; }
-
-.Media-body {
-  flex: 1; }
 
 body {
   font-family: 'Raleway', sans-serif; }
@@ -1478,8 +1490,7 @@ h2 {
   vertical-align: middle;
   margin: 0 auto;
   text-align: left;
-  position: absolute;
-  top: 0px;
+  top: 50%;
   width: 90%; }
   @media only screen and (min-width: 832px) {
     .ss-popup-ui-wrapper {
@@ -1510,6 +1521,7 @@ h2 {
 
 .ss-popup-ui-wrapper.bring-in-overlay {
   z-index: 9000;
+  position: absolute;
   max-height: calc(100% - 100px);
   position: fixed;
   top: 50%;
