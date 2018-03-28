@@ -46,10 +46,13 @@ gulp.task('vendor', function() {
 gulp.task('scripts', function() {
     return gulp.src('js/*.js')
         .pipe(concat('core.js'))
-        .pipe(uglify())
-        .pipe(gzip())
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.stream());
+});
+
+gulp.task('compress', function() {
+return gulp.src('dist/*.js')
+        .pipe(uglify())
 });
 
 // Watch Files For Changes
@@ -60,4 +63,4 @@ gulp.task('watch', function() {
 
 // Default Task
 gulp.task('default', ['export-fonts', 'sass', 'vendor', 'scripts', 'serve', 'watch']);
-gulp.task('build', ['export-fonts', 'sass', 'vendor', 'scripts']);
+gulp.task('build', ['export-fonts', 'sass', 'vendor', 'scripts', 'compress']);
