@@ -1647,7 +1647,7 @@ h2 {
 .menu {
   position: absolute;
   top: 30%;
-  right: 30px; }
+  right: 10px; }
   .menu a {
     color: #333;
     font-size: 15px;

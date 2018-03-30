@@ -79,7 +79,8 @@ position:absolute;
 .menu{
 position: absolute;
 top:30%;
-right:30px;
+right:10px;
+
 	a{
 	color:#333;
 	@include font-size(15);

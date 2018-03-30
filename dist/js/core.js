@@ -286,16 +286,6 @@ $('.menu-overlay').click(function(){
      $(this).removeClass('open');
 })
 
-
-lozad('.lozad', {
-    load: function(el) {
-        el.src = el.dataset.src;
-        el.onload = function() {
-            el.classList.add('fade')
-        }
-    }
-}).observe()
-
 // vanilla JavaScript
 $(".menu-link").click(function(event) {
     event.preventDefault();
