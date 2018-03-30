@@ -269,11 +269,6 @@ var jsPopUp = $(".ss-pop-up-trigger")
 var jsUiWrapper = $(".ss-popup-ui-wrapper");
 var jsWrapper = $('.ss-popup-ui-content');
 
-$('.ss-mobile-navigation-menu-link').click(function(e){
-    e.preventDefault();
-})
-
-
 $(jsOpenPopUp).click(function(e){
     e.preventDefault();
     jsUiWrapper.addClass('bring-in-overlay');
@@ -290,6 +285,16 @@ $('.ss-popup-ui').click(function(){
 $('.menu-overlay').click(function(){
      $(this).removeClass('open');
 })
+
+
+lozad('.lozad', {
+    load: function(el) {
+        el.src = el.dataset.src;
+        el.onload = function() {
+            el.classList.add('fade')
+        }
+    }
+}).observe()
 
 // vanilla JavaScript
 $(".menu-link").click(function(event) {

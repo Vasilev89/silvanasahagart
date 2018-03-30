@@ -984,6 +984,10 @@
 body {
   font-family: 'Raleway', sans-serif; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 .ss-light-copy, .ss-body-copy-default, .ss-hero, .ss-component-arwtworks-paintings-caption, .ss-section-sign-up-disclaimer p, .ss-form-disclaimer {
   font-weight: 300; }
 
@@ -1772,7 +1776,7 @@ li {
   opacity: 1;
   margin: 5px; }
 
-a {
+.ss-mobile-navigation-nav-links {
   display: block;
   position: relative;
   color: #ffffff;
@@ -2497,6 +2501,16 @@ a.pswp__share--download:hover {
 
 .pswp--minimal--dark .pswp__top-bar {
   background: none; }
+
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s; }
 
 .ss-component {
   margin-top: 40px; }
