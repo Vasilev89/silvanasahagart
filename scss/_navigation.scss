@@ -66,12 +66,20 @@ position:absolute;
 	&-menu-link{
 	right:0;
 	}
+
+	&-close-button{
+		position: absolute;	
+		color:#fff;
+		top:40px;
+		right:30px;
+	}
+
 }
 
 .menu{
 position: absolute;
-top:40%;
-right:40px;
+top:30%;
+right:30px;
 	a{
 	color:#333;
 	@include font-size(15);
