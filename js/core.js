@@ -7,40 +7,40 @@ var openPhotoSwipe = function() {
     var items = [
         {
             src: './/images/Painting1_Large.jpg',
-            w: 964,
-            h: 1024
+            w: 1110,
+            h: 1491
         },
         {
             src: './/images/Painting2_Large.jpg',
-            w: 1024,
-            h: 683
+            w: 1125,
+            h: 1594
         },
 
         {
             src: './/images/Painting3_Large.jpg',
-            w: 1024,
-            h: 683
+            w: 2964,
+            h: 3947
         },
 
 
         {
             src: './/images/Painting4_Large.jpg',
-            w: 1024,
-            h: 683
+            w: 3024,
+            h: 4032
         },
 
 
         {
             src: './/images/Painting5_Large.jpg',
-            w: 1024,
-            h: 683
+            w: 1270,
+            h: 1920
         },
 
 
         {
             src: './/images/Painting6_Large.jpg',
-            w: 1024,
-            h: 683
+            w: 642,
+            h: 960
         }
     ];
     
