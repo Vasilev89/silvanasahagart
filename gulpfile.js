@@ -40,7 +40,7 @@ gulp.task('sass', function() {
 gulp.task('minify-css', function() {
     return gulp.src('dist/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('test/test'));
 });
 
 
