@@ -1,7 +1,6 @@
 $hero-image-height:250px;
 
 .ss-component-introduction{
-margin-top: 105px !important;
 overflow:hidden;
 position:relative;
 margin-top: $related-spacing;
@@ -19,6 +18,10 @@ padding:0px;
 margin:0px;
 min-height:$hero-image-height;
 }
+.ss-component-hero{
+	margin-top: 105px !important;
+}
+
 
 .ss-component-introduction-copy-holder{
 	@include box-sizing(border-box);

@@ -40,7 +40,12 @@ margin: auto;
 .Media {
   -js-display: flex;
   @include flexbox();
-  @include align-items(flex-start)
+  @include align-items(flex-start);
+  @include flex-direction(column);
+  @include mq(tablet){
+		@include flex-direction(row);
+	}
+
 }
 
 .Media-body {
