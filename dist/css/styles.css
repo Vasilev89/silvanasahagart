@@ -3369,7 +3369,8 @@ a {
         display: none; }
         .ss-standard-cta-link__primary-cta-promotion {
           display: block;
-          margin: auto; } }
+          margin: auto;
+          text-align: center; } }
 
 .ss-copy-align-center, h1, h2, h3 {
   text-align: center; }
