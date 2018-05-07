@@ -7,6 +7,7 @@ var concat = require('gulp-concat');
 var gzip = require('gulp-gzip');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
+var cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
 
 var babel = require("gulp-babel");
@@ -34,6 +35,14 @@ gulp.task('sass', function() {
         .pipe(gulp.dest("dist/css"))
         .pipe(browserSync.stream());
 });
+
+
+gulp.task('minify-css', function() {
+    return gulp.src('dist/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist'));
+});
+
 
 //Transpile, Concatonate and Minify Javascript
 gulp.task('vendor', function() {
@@ -63,4 +72,4 @@ gulp.task('watch', function() {
 
 // Default Task
 gulp.task('default', ['export-fonts', 'sass', 'vendor', 'scripts', 'serve', 'watch']);
-gulp.task('build', ['export-fonts', 'sass', 'vendor', 'scripts', 'compress']);
+gulp.task('build', ['export-fonts', 'sass', 'vendor', 'scripts', 'minify-css', 'compress']);
