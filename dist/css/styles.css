@@ -3368,9 +3368,15 @@ a {
       .ss-standard-cta-link__primary-cta {
         display: none; }
         .ss-standard-cta-link__primary-cta-promotion {
+          cursor: pointer;
+          background: #fff;
           display: block;
           margin: auto;
-          text-align: center; } }
+          text-align: center;
+          margin-top: 20px; } }
+    @media only screen and (min-width: 480px) and (min-width: 832px) {
+      .ss-standard-cta-link__primary-cta-promotion {
+        margin-top: 10px; } }
 
 .ss-copy-align-center, h1, h2, h3 {
   text-align: center; }
