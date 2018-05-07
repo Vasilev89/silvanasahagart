@@ -38,9 +38,9 @@ gulp.task('sass', function() {
 
 
 gulp.task('minify-css', function() {
-    return gulp.src('dist/*.css')
+    return gulp.src('dist/css/*.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('test/test'));
+    .pipe(gulp.dest('dist/minified/css'));
 });
 
 
@@ -60,8 +60,9 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('compress', function() {
-return gulp.src('dist/*.js')
+return gulp.src('dist/js/*.js')
         .pipe(uglify())
+        .pipe(gulp.dest('dist/js/compressed/js'));
 });
 
 // Watch Files For Changes
