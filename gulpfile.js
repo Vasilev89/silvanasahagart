@@ -72,5 +72,5 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', ['export-fonts', 'sass', 'vendor', 'scripts', 'serve', 'watch']);
+gulp.task('default', ['export-fonts', 'sass', 'vendor', 'scripts', 'minify-css', 'compress', 'serve', 'watch']);
 gulp.task('build', ['export-fonts', 'sass', 'vendor', 'scripts', 'minify-css', 'compress']);
